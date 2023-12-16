@@ -1,0 +1,203 @@
+" Silvarc IdeaVim config
+" initially based on https://github.com/JaimeArboleda/jet_brains_settings/blob/main/.ideavimrc
+
+" set hlsearch
+set incsearch
+set gdefault
+set ignorecase
+set smartcase
+
+set relativenumber
+set shell=powershell.exe
+set showcmd
+set showmode
+set number
+set clipboard+=unnamed
+set clipboard+=ideaput
+set idearefactormode=keep
+set visualbell
+set noerrorbells
+set noideadelaymacro
+set notimeout
+set ideajoin
+set ideamarks
+set scrolloff=8
+set sidescrolloff=12
+set undolevels=10000
+set ideastatusicon=gray
+sethandler a:vim
+let mapleader=" "
+
+" These do not seem to work in Rider
+set ideavimsupport+=dialog
+set ideavimsupport+=singleline
+
+
+""" Plugins
+set which-key
+let g:WhichKey_Divider = " → "
+let g:WhichKey_FontFamily = "JetBrains Mono"
+let g:WhichKey_FontSize = 16
+let g:WhichKey_KeyStyle = "bold"
+let g:WhichKey_KeyColor = "default"
+let g:WhichKey_PrefixStyle = "none"
+let g:WhichKey_PrefixColor = "#f5e893"
+let g:WhichKey_CommandStyle = "none"
+let g:WhichKey_CommandColor = "#bca0dc"
+
+let g:WhichKey_SortOrder = "by_key_prefix_first"
+let g:WhichKey_SortCaseSensitive = "false"
+let g:WhichKey_ProcessUnknownMappings = "false"
+let g:WhichKey_DefaultDelay = 200
+let g:WhichKey_ShowTypedSequence = "false"
+
+let g:WhichKeyDesc_leader = "<leader> Actions"
+
+set NERDTree
+set textobj-indent
+set highlightedyank 
+set argtextobj
+set vim-paragraph-motion 
+set textobj-entire 
+
+set exchange
+let g:WhichKeyDesc_cx = "cx"
+let g:WhichKeyDesc_cxc = "cxc Exchange clear"
+let g:WhichKeyDesc_cxx = "cxx Exchange line"
+
+set ReplaceWithRegister
+let g:WhichKeyDesc_replace = "gr"
+
+set commentary
+let g:WhichKeyDesc_gc = "gc Comment"
+let g:WhichKeyDesc_gcc = "gcc Comment line"
+let g:WhichKeyDesc_gcu = "gcu Uncomment"
+
+set surround
+let g:WhichKeyDesc_surround_ys = "ys"
+let g:WhichKeyDesc_surround_ds = "ds"
+let g:WhichKeyDesc_surround_cs = "cs"
+
+set multiple-cursors
+nmap <C-n> <Plug>NextWholeOccurrence
+xmap <C-n> <Plug>NextWholeOccurrence
+omap <C-n> <Plug>NextWholeOccurrence
+nmap g<C-n> <Plug>NextOccurrence
+xmap g<C-n> <Plug>NextOccurrence
+omap g<C-n> <Plug>NextOccurrence
+xmap <C-x> <Plug>SkipOccurrence
+xmap <C-p> <Plug>RemoveOccurrence
+nmap <S-C-n> <Plug>AllWholeOccurrences
+xmap <S-C-n> <Plug>AllWholeOccurrences
+omap <S-C-n> <Plug>AllWholeOccurrences
+nmap g<S-C-n> <Plug>AllOccurrences
+xmap g<S-C-n> <Plug>AllOccurrences
+omap g<S-C-n> <Plug>AllOccurrences
+
+set easymotion
+unmap <leader><leader>
+map s <Plug>(easymotion-bd-f2)
+
+
+""" Action picker
+"source ~/Projects/IdeaVim/ideavim-action-list.g.vim
+source C:/Users/Marta/Projects/Vim/ideavim-action-picker-generator/example/ideavim-action-list.g.vim
+
+""" Maps
+" Create newlines and stay in normal mode
+nmap <silent> zj o<Esc>k
+let g:WhichKeyDesc_zj = "zj"
+nmap <silent> zk O<Esc>j
+let g:WhichKeyDesc_zk = "zk"
+
+" Insert mode
+imap <c-k> <up>
+imap <c-j> <down>
+imap <c-h> <left>
+imap <c-l> <right>
+imap jk <Esc>
+let g:WhichKeyDesc_jk = "jk"
+
+" Maintain visual selection after indenting
+vmap < <gv
+vmap > >gv
+
+" Do not overwrite unnamed register with x
+nnoremap x "_x
+
+" U to redo
+nmap U <C-r>
+
+" Copilot
+imap <c-p> <Action>(copilot.applyInlays)
+nmap <c-p> <Action>(copilot.applyInlays)
+vmap <c-p> <Action>(copilot.applyInlays)
+"imap <c-[> <Action>(copilot.cycleNextInlays)
+"nmap <c-[> <Action>(copilot.cycleNextInlays)
+"vmap <c-[> <Action>(copilot.cycleNextInlays)
+"imap <c-]> <Action>(copilot.cyclePrevInlays)
+"nmap <c-]> <Action>(copilot.cyclePrevInlays)
+"vmap <c-]> <Action>(copilot.cyclePrevInlays)
+"inoremap <c-P> <Action>(copilot.requestCompletions)
+"nnoremap <c-P> <Action>(copilot.requestCompletions)
+"vnoremap <c-P> <Action>(copilot.requestCompletions)
+
+" Other
+"nmap <c-z> :action ToggleDistractionFreeMode<CR>
+"nmap [[ :action MethodUp<CR>
+"nmap ]] :action MethodDown<CR>
+"nmap <leader>c :action CommentByLineComment<CR>
+"nmap <leader>l :action RecentLocations<CR>
+"nmap <leader>h  :action LocalHistory.ShowHistory<CR>
+"nmap <c-s> :action FileStructurePopup<CR>
+
+" Tab navigation
+"nmap <c-\> :action SplitVertically<CR>
+"nmap <c--> :action SplitHorizontally<CR>
+"nmap <c-=> :action Unsplit<CR>
+"nmap <c-m> :action MoveEditorToOppositeTabGroup<CR>
+"nmap <c-h> <c-w>h
+"nmap <c-l> <c-w>l
+"nmap <c-j> <c-w>j
+"nmap <c-k> <c-w>k 
+"nmap <TAB> :action PreviousTab<CR>
+"nmap <s-TAB> :action NextTab<CR>
+
+" Window navigation
+"nmap <c-p> :action JumpToLastWindow<CR>
+"nmap <c-x> :action HideAllWindows<CR>
+"nmap <Leader>en :action EditSourceInNewWindow<CR>
+"nmap <Leader>n :action NextWindow<CR>
+"nmap <Leader>q :action CloseContent<CR>
+"nmap <Leader>qa :action CloseAllEditors<CR>
+
+" Regions
+"nmap zc :action CollapseRegion<CR>
+"nmap zo :action ExpandRegion<CR>
+"nmap <leader>zc :action CollapseAllRegions<CR>
+" Most useful go to commands use g:
+"nmap gt <Action>(NextTab)
+"let g:WhichKeyDesc_NextTab = "gt"
+"nmap gT <Action>(PreviousTab)
+"let g:WhichKeyDesc_PrevTab = "gT"
+"nmap gE <Action>(GotoPreviousError)
+"let g:WhichKeyDesc_errp = "gE"
+"nmap ge <Action>(GotoNextError)
+"let g:WhichKeyDesc_errn = "ge"
+"nmap gd <Action>(GotoDeclaration)
+"let g:WhichKeyDesc_decl = "gd"
+"nmap gD <Action>(GotoTypeDeclaration)
+"let g:WhichKeyDesc_tdecla = "gD"
+"nmap gb <Action>(Back)
+"let g:WhichKeyDesc_tdeclaa = "gb"
+"nmap gf <Action>(Forward)
+"let g:WhichKeyDesc_tdeclaak = "gf"
+
+"nmap ge :action ReSharperGotoNextErrorInSolution<CR>
+"nmap gE :action ReSharperGotoPreviousErrorInSolution<CR>
+"nmap gi :action GotoImplementation<CR>
+"nmap gd :action GotoDeclaration<CR>
+"nmap gp :action GotoSuperMethod<CR>
+"nmap gy :action GotoTypeDeclaration<CR>
+"nmap gb :action Back<CR>
+"nmap gf :action Forward<CR>

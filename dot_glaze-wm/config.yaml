@@ -1,0 +1,370 @@
+primary_light: &primary_light "#FFFFFFFF"
+background_light: &background_light "#FFFFFF55"
+background_dark: &background_dark "transparent"
+
+gaps:
+  inner_gap: 2
+  outer_gap: 0
+
+focus_borders:
+  active:
+    enabled: true
+    color: "#e0af68"
+  inactive:
+    enabled: true
+    color: "#937344"
+
+general:
+  show_floating_on_top: false
+  floating_window_move_amount: "6%"
+  toggle_workspace_on_refocus: false
+  focus_follows_cursor: false
+  cursor_follows_focus: false
+
+bar:
+  height: "25"
+  position: "top"
+  background: "#000000"
+  foreground: *primary_light
+  #font_family: "Segoe UI"
+  #font_family: "CaskaydiaCove Nerd Font"
+  font_family: "CodeNewRoman Nerd Font"
+  #font_family:  "Iosevka Nerd Font"
+  font_size: "18px"
+  font_weight: "200"
+  padding: "0"
+  margin: "0"
+  offset_x: "0"
+  offset_y: "0"
+  border_radius: 0
+  border_width: 0
+  border_color: "transparent"
+
+  components_center:
+    - type: "workspaces"
+      background: "#000000"
+      border_radius: 0
+      border_width: 0
+      border_color: "#000000"
+
+      focused_workspace_foreground: *primary_light
+      focused_workspace_background: *background_dark
+      focused_workspace_border_color: *background_dark
+
+      default_workspace_foreground: *background_light
+      default_workspace_background: *background_dark
+      default_workspace_border_color: *background_dark
+
+      displayed_workspace_foreground: *background_light
+      displayed_workspace_background: *background_dark
+      displayed_workspace_border_color: *background_dark
+
+  components_left:
+      - type: "system tray"
+        margin: "5 0 5 0"
+        label_expand_text: " "
+        label_collapse_text: " "
+  components_right:
+      - type: "clock"
+        time_formatting: "HH:mm"
+  #   - type: "binding mode"
+  #     foreground: *background_dark
+  #     background: *primary_light
+  #     margin: "0 4px 0 0"
+  #     padding: "0 8px"
+  #   - type: "tiling direction"
+  #     # label_horizontal: "  "
+  #     # label_vertical: " "
+  #     label_horizontal: "<attr fg='#f068f2'>  </attr>"
+  #     label_vertical: "<attr fg='#67f0e2'>  </attr>"
+  #     background: *background_dark
+  #     margin: "0 0px"
+  #     padding: "0 8px"
+  # components_right:
+  #   - type: "image"
+  #     source: "C:\\Folder\\AnotherFolder\\image.png"
+  # components_left:
+  #   - type: "image"
+  #     source: "C:\\Folder\\AnotherFolder\\image.png"
+
+workspaces:
+  - name: "m0w0"
+    display_name: ""
+    bind_to_monitor: 1
+    keep_alive: true
+  - name: "m0w1"
+    display_name: ""
+    bind_to_monitor: 1
+    keep_alive: true
+  - name: "m0w2"
+    display_name: ""
+    bind_to_monitor: 1
+    keep_alive: true
+  - name: "m0w3"
+    display_name: ""
+    bind_to_monitor: 1
+    keep_alive: true
+  - name: "m0w4"
+    display_name: ""
+    bind_to_monitor: 1
+    keep_alive: true
+
+  - name: "m1w0"
+    display_name: ""
+    bind_to_monitor: 2
+    keep_alive: true
+  - name: "m1w1"
+    display_name:  ""
+    bind_to_monitor: 2
+    keep_alive: true
+  - name: "m1w2"
+    display_name: ""
+    bind_to_monitor: 2
+    keep_alive: true
+  - name: "m1w3"
+    display_name: ""
+    bind_to_monitor: 2
+    keep_alive: true
+  - name: "m1w4"
+    display_name: ""
+    bind_to_monitor: 2
+    keep_alive: true
+
+window_rules:
+  - command: "ignore"
+    match_process_name: "RoundedTB"
+  - command: "ignore"
+    match_process_name: "LeagueOfLegends"
+  - command: "ignore"
+    match_process_name: "League Of Legends"
+  - command: "ignore"
+    match_class_name: "RiotWindowClass"
+  - command: "ignore"
+    match_process_name: "LeagueClient"
+  - command: "ignore"
+    match_process_name: "bg3_dx11"
+  - command: "ignore"
+    match_process_name: "RotMG Exalt"
+
+  - command: "set floating"
+    match_class_name: "#32770" # system dialogs as floating
+
+  - command: "set floating"
+    match_process_name: "1Password"
+
+  - command: "set floating"
+    match_process_name: "FluentSearch"
+    # match_title: "Fluent Search - Settings"
+
+  - command: "set floating"
+    match_process_name: "KeyboardSplitter"
+
+  - command: "set floating"
+    match_process_name: "LariLauncher"
+
+  - command: "set floating"
+    match_process_name: "Unity Hub"
+
+  - command: "resize borders 0px -7px -7px -7px"
+    match_process_name: "steamwebhelper"
+
+  - command: "resize borders 0px -7px -7px -7px"
+    match_process_name: "steam"
+
+  - command: "resize borders 0 -2px 0px -2px"
+    match_process_name: "firefox"
+
+  - command: "resize borders 0 -2px 0px -2px"
+    match_process_name: "librewolf"
+
+  - command: "move to workspace m0w1"
+    match_process_name: "rider64"
+  - command: "set floating"
+    match_class_name: "SunAwtDialog"
+
+  - command: "move to workspace m0w0"
+    match_process_name: "Unity"
+
+  - command: "move to workspace m0w2"
+    match_process_name: "VSCodium"
+    match_class_name: "Chrome_WidgetWin_1"
+
+  - command: "move to workspace m1w0"
+    match_process_name: "Discord"
+  - commands: ["move to workspace m1w0", "resize borders 0px 1px 1px 1px", "move left", "set width +66%"]
+    match_process_name: "Vesktop"
+  - commands: ["move to workspace m1w0", "resize borders 0px 1px 1px 1px", "move left", "set width +66%"]
+    match_process_name: "ArmCord"
+
+  - commands: ["resize borders 0px 1px 1px 1px", "move to workspace m1w0"]
+    match_process_name: "Obsidian"
+
+  - command: "move to workspace m1w1"
+    match_process_name: "plastic"
+  - command: "move to workspace m0w4"
+    match_process_name: "plastic"
+    match_title: "/(?!^Workspace.*)(^.*$)/"
+
+  - commands: ["move to workspace m1w2", "tiling direction vertical", "move up"]
+    match_process_name: "Spark Desktop"
+    match_class_name: "Chrome_WidgetWin_1"
+
+  - commands: ["move to workspace m1w2", "tiling direction vertical", "move down"]
+    match_process_name: "Beeper"
+
+  - command: "move to workspace m1w3"
+    match_process_name: "firefox"
+
+  - command: "move to workspace m1w3"
+    match_process_name: "vivaldi"
+    match_title: ".* - Vivaldi"
+  - command: "resize borders 0px -6px -6px -6px"
+    match_process_name: "vivaldi"
+    match_title: ".* - Vivaldi"
+  - command: "move to workspace m1w0"
+    match_process_name: "vivaldi"
+    match_title: "ClickUp.*"
+  - command: "move to workspace m1w4"
+    match_process_name: "vivaldi"
+    match_title: "YouTube Music.*"
+  - command: "move to workspace m1w4"
+    match_process_name: "vivaldi"
+    match_title: "Twilight Wars.*"
+
+  - command: "ignore"
+    match_process_name: "Glorious Companions"
+#  - command: "ignore"
+#    match_process_name: "Vintagestory"
+
+binding_modes:
+  - name: "send"
+    keybindings:
+      - commands: ["binding mode none", "move to workspace m0w0"]
+        binding: "Alt+Shift+Q"
+      - commands: ["binding mode none", "move to workspace m0w1"]
+        binding: "Alt+Shift+W"
+      - commands: ["binding mode none", "move to workspace m0w2"]
+        binding: "Alt+Shift+E"
+      - commands: ["binding mode none", "move to workspace m0w3"]
+        binding: "Alt+Shift+R"
+      - commands: ["binding mode none", "move to workspace m0w4"]
+        binding: "Alt+Shift+T"
+      - commands: ["binding mode none", "move to workspace m1w0"]
+        binding: "Alt+Shift+1"
+      - commands: ["binding mode none", "move to workspace m1w1"]
+        binding: "Alt+Shift+2"
+      - commands: ["binding mode none", "move to workspace m1w2"]
+        binding: "Alt+Shift+3"
+      - commands: ["binding mode none", "move to workspace m1w3"]
+        binding: "Alt+Shift+4"
+      - commands: ["binding mode none", "move to workspace m1w4"]
+        binding: "Alt+Shift+5"
+      - commands: ["binding mode none", "move left"]
+        binding: "Alt+Shift+H"
+      - commands: ["binding mode none", "move down"]
+        binding: "Alt+Shift+J"
+      - commands: ["binding mode none", "move up"]
+        binding: "Alt+Shift+K"
+      - commands: ["binding mode none", "move right"]
+        binding: "Alt+Shift+L"
+      - command: "binding mode none"
+        binding: "Escape"
+
+keybindings:
+  - command: "tiling direction toggle"
+    binding: "Alt+Shift+Z"
+
+  - command: "binding mode send"
+    binding: "Alt+Shift+S"
+
+  - command: "close"
+    binding: "Alt+Shift+D"
+
+  - command: "toggle maximized"
+    binding: "Alt+Shift+A"
+
+  - command: "focus mode toggle"
+    binding: "Alt+Shift+F"
+
+  - command: "exit wm"
+    binding: "Alt+Shift+B"
+
+  - command: "reload config"
+    binding: "Alt+Shift+G"
+
+  - command: "set minimized"
+    binding: "Alt+Shift+X"
+
+  # - command: "toggle floating"
+  #   binding: "Alt+Shift+T"
+
+  # - command: "focus workspace next"
+  #   binding: "Alt+Tab"
+
+  # - command: "focus workspace prev"
+  #   binding: "Alt+Shift+Tab"
+
+  - command: "focus left"
+    binding: "Alt+Shift+H"
+
+  - command: "focus down"
+    binding: "Alt+Shift+J"
+
+  - command: "focus up"
+    binding: "Alt+Shift+K"
+
+  - command: "focus right"
+    binding: "Alt+Shift+L"
+
+  - command: "resize width +10%"
+    binding: "Alt+Shift+O"
+
+  - command: "resize width -10%"
+    binding: "Alt+Shift+Y"
+
+  - command: "resize height +10%"
+    binding: "Alt+Shift+U"
+
+  - command: "resize height -10%"
+    binding: "Alt+Shift+I"
+
+  - command: "focus workspace m0w0"
+    binding: "Alt+Shift+Q"
+
+  - command: "focus workspace m0w1"
+    binding: "Alt+Shift+W"
+
+  - command: "focus workspace m0w2"
+    binding: "Alt+Shift+E"
+
+  - command: "focus workspace m0w3"
+    binding: "Alt+Shift+R"
+
+  - command: "focus workspace m0w4"
+    binding: "Alt+Shift+T"
+
+  - command: "focus workspace m1w0"
+    binding: "Alt+Shift+1"
+
+  - command: "focus workspace m1w1"
+    binding: "Alt+Shift+2"
+
+  - command: "focus workspace m1w2"
+    binding: "Alt+Shift+3"
+
+  - command: "focus workspace m1w3"
+    binding: "Alt+Shift+4"
+
+  - command: "focus workspace m1w4"
+    binding: "Alt+Shift+5"
+
+# ; Mouse
+
+  - command: "focus workspace next"
+    binding: "F13"
+
+  - command: "focus workspace prev"
+    binding: "F14"
+
+  - command: "toggle maximized"
+    binding: "F17"
