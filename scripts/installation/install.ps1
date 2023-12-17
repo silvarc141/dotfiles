@@ -8,7 +8,7 @@ if (-Not ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdent
 }
 
 Write-Host "Installing package providers..." -ForegroundColor "Yellow"
-winget upgrade winget
+winget upgrade winget --silent --accept-package-agreements
 
 Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
 "$(Invoke-RestMethod get.scoop.sh) -RunAsAdmin" | Invoke-Expression
