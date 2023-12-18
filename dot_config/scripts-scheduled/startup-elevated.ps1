@@ -1,4 +1,4 @@
-Start-Process -FilePath "$env:USERPROFILE\scripts\hotkeys\init.ahk"
+Start-Process -FilePath "$env:USERPROFILE\.config\autohotkey\init.ahk"
 #Start-Process -FilePath "$env:USERPROFILE\Projects\GlazeWM\GlazeWM.exe"
 
 $ScoopAppsPath = "$env:USERPROFILE\scoop\apps"

@@ -1,6 +1,6 @@
 . $env:USERPROFILE\.config\scripts-commands\hide-dot-files-in-directory.ps1 $env:USERPROFILE
 
-Start-Process -FilePath "$env:USERPROFILE\scripts\hotkeys\de-elevated-run-init.ahk"
+Start-Process -FilePath "$env:USERPROFILE\.config\autohotkey\de-elevated-run-init.ahk"
 
 $ScoopAppsPath = "$env:USERPROFILE\scoop\apps"
 Start-Process -FilePath "$ScoopAppsPath\micaforeveryone\current\MicaForEveryone.exe"
