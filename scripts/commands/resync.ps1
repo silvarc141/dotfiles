@@ -1,1 +1,0 @@
-rclone bisync "C:/Users/Marta/Sync" "gdrive:/Sync" --filters-file "C:/Users/Marta/Sync/sync_filter.txt" --resync --drive-acknowledge-abuse
