@@ -8,10 +8,8 @@ if (-Not ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdent
 }
 
 # ask for credentials
-$Message = "Enter the username and password that will run the task"; 
+$Message = "Enter the username and password that will run the task"
 $Credential = Get-Credential -Message $Message -UserName "$env:userdomain\$env:username"
-# $Credential = $Host.UI.PromptForCredential("Task username and password", $Message, "$env:userdomain\$env:username", $env:userdomain)
-
 
 function Register-ScheduledPSScriptTask {
     param(
