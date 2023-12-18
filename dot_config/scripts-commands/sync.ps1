@@ -1,7 +1,7 @@
 # Custom file sync solution using rclone (file filtering support)
 
 if($null -eq $env:SYNCPATHLOCAL) {$env:SYNCPATHLOCAL = "$env:USERPROFILE\sync"}
-if($null -eq $env:SYNCPATHREMOTE) {$env:SYNCPATHREMOTE = "gdrive:/sync"}
+if($null -eq $env:SYNCPATHREMOTE) {$env:SYNCPATHREMOTE = "gdrive:sync"}
 if($null -eq $env:SYNCPATHFILTER) {$env:SYNCPATHFILTER = "$env:USERPROFILE\sync\.rclone_filter.txt"}
 
 if(-not (Test-Path $env:SYNCPATHLOCAL -PathType Container))
@@ -13,7 +13,7 @@ if(-not (Test-Path $env:SYNCPATHLOCAL -PathType Container))
 $TitleMsg = "Autosync to remote path: `"$env:SYNCPATHREMOTE`""
 $DescriptionMsg = "Checking connection for local path `"$env:SYNCPATHLOCAL`""
 Write-Output "$TitleMsg`n$DescriptionMsg`n"
-rclone tree "gdrive:Sync" --level 1 -d | out-null
+rclone tree "gdrive:sync" --level 1 -d | out-null
 
 if($?)
 {
