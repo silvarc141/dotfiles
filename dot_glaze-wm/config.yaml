@@ -59,11 +59,11 @@ bar:
       displayed_workspace_background: *background_dark
       displayed_workspace_border_color: *background_dark
 
-  components_left:
-      - type: "system tray"
-        margin: "5 0 5 0"
-        label_expand_text: " "
-        label_collapse_text: " "
+      # components_left:
+      #- type: "system tray"
+      #  margin: "5 0 5 0"
+      # label_expand_text: " "
+      #  label_collapse_text: " "
   components_right:
       - type: "clock"
         time_formatting: "HH:mm"
