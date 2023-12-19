@@ -18,13 +18,13 @@ ActivateWindowWhenExists(criteria)
 
 ^!t::
 {
-	RunDeelevatedDefault ShimsDir '\alacritty-config.exe'
+	RunDeelevatedDefault ShimsDir '\alacritty-config.exe --working-directory ' HomeDir
 	ActivateWindowWhenExists "Alacritty"
 }
 
 ^!+t::
 {
-	Run ShimsDir '\alacritty-config.exe', '', 'Hide'
+	Run ShimsDir '\alacritty-config.exe --working-directory ' HomeDir, '', 'Hide'
 	ActivateWindowWhenExists "Alacritty"
 }
 

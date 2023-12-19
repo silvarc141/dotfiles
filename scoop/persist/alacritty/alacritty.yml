@@ -171,7 +171,7 @@ shell:
  args:
    - -NoLogo
 
-working_directory: "C:\\Users\\Marta"
+     #working_directory: "C:\\Users\\Marta"
 
 # Offer IPC using `alacritty msg` (unix only)
 #ipc_socket: true
