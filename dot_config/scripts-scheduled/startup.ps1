@@ -1,5 +1,5 @@
 Start-Process -FilePath "$env:USERPROFILE\.config\autohotkey\de-elevated-run-init.ahk"
-Start-Process -FilePath "$env:PROGRAMFILES\1Password\app\8\1Password.exe" -ArgumentList "--silent"
+Start-Job { Start-Process -FilePath "$env:PROGRAMFILES\1Password\app\8\1Password.exe" -ArgumentList "--silent" }
 
 $ScoopAppsPath = "$env:USERPROFILE\scoop\apps"
 Start-Process -FilePath "$ScoopAppsPath\micaforeveryone\current\MicaForEveryone.exe"
