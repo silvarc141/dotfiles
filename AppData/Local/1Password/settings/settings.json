@@ -1,7 +1,7 @@
 {
   "version": 1,
   "sshAgent.sshAuthorizatonModel": "application-and-terminal-session",
-  "ui.routes.lastUsedRoute": "{\"type\":\"ItemDetail\",\"content\":{\"itemListRoute\":{\"unlockedRoute\":{\"collectionUuid\":\"QNSTZS7E4RDRREM53JMVOENSJM\"},\"itemListType\":{\"type\":\"Vault\",\"content\":\"5\"},\"category\":null,\"sortBehavior\":null},\"itemId\":\"46\"}}",
+  "ui.routes.lastUsedRoute": "{\"type\":\"ItemList\",\"content\":{\"unlockedRoute\":{\"collectionUuid\":\"QNSTZS7E4RDRREM53JMVOENSJM\"},\"itemListType\":{\"type\":\"Vault\",\"content\":\"7\"},\"category\":null,\"sortBehavior\":null}}",
   "ui.itemList.sortBehavior": "{\"default\":{\"sortKey\":\"dateCreated\",\"sortOrder\":\"descending\"},\"password_strength\":{\"sortKey\":\"dateModified\",\"sortOrder\":\"descending\"},\"search\":{\"sortKey\":\"dateModified\",\"sortOrder\":\"descending\"}}",
   "passwordGenerator.type": "password-generator-menu-entry-type-memorable-password",
   "passwordGenerator.size.words": 4,
@@ -60,6 +60,6 @@
     "sshAgent.storeKeyTitles": "1F7CfqBU0A7i7q1x0aszqzGigLPE0TrD+SKNDUmbL5I",
     "sshAgent.storeSshKeyTitlesResponseGiven": "ZsBh4Z+BQ54FfGo5eF9d/VQt0+7GgoCuYXWdz78W1UI",
     "ui.itemList.sortBehavior": "em7k+SKhVRKCKNNupLxIMXGxXgQDMnoe7J3W4b822/w",
-    "ui.routes.lastUsedRoute": "h9gZ//tXtJI3Nnqy2cQVErHwDfb3ebPu40ePdQANMic"
+    "ui.routes.lastUsedRoute": "JmYL70NDcAwthAUjD2gqQT+Yw6Ms4mezIDDXWgzOmpI"
   }
 }

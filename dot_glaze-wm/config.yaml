@@ -295,8 +295,8 @@ keybindings:
   - command: "set minimized"
     binding: "Alt+Shift+X"
 
-  # - command: "toggle floating"
-  #   binding: "Alt+Shift+T"
+  - command: "toggle floating"
+    binding: "Alt+Shift+T"
 
   # - command: "focus workspace next"
   #   binding: "Alt+Tab"
