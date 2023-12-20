@@ -36,26 +36,8 @@
   },
   "PhotobucketOAuthInfo": null,
   "PhotobucketAccountInfo": null,
-  "GooglePhotosOAuth2Info": {
-    "Client_ID": "810697162603-ag350u1fnmf3riubv91otme0v5fkk2d6.apps.googleusercontent.com",
-    "Client_Secret": "mDft-efE0PUcwIRCLG8nkLD9",
-    "Token": {
-      "access_token": "$DPAPIEncrypted$AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAf3s97T9msUarez8crX/36wAAAAACAAAAAAAQZgAAAAEAACAAAAB24r0za/HTaynDpogq9VvgPMdq1j5FvaIHa/Cnm1xT4QAAAAAOgAAAAAIAACAAAABCqa+VpFh9yxiaB8TvYiLXrxhMhOrJIpmaMk7E6vLZfeAAAAAVzORy+yeZxpxVkH5od82V1B/rIHQZmKzdgGbeoKOCmNyaDeljFnoYzHXZaeiLN26IGHI1fQeNlwDarZZ7T4QQQIbpvGFyJZAyl0vCO7cG60UBFkuyX9kMFLruRxKSEbSV0h6cVvTVZnwSFMHj9Br1WJmhBwB/f3B6uN9cuYSX/NowKsKgck4ZrrT+fpLr+LfmBbccScczV9/C0+gB8GsCuSZTOjkTadtC7LOY1/h3YBIsh3PS1PKsqsmtmsdgUQJ58j9fnyll/GgRttRh3aRJX8lDGNBe/PZICIblNBM0skAAAADZ095j2pkjZ/TjYzoUA9hu06B+MkC++EhltfYNbARwaRFDAghOn5Ld33m0TPGwB7MnV0lmwcb03dx0zBpi7agc",
-      "refresh_token": "$DPAPIEncrypted$AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAf3s97T9msUarez8crX/36wAAAAACAAAAAAAQZgAAAAEAACAAAACOp1P1+ohIvagLTStDW/XJ3K2wVs9wEDPWKgoEn/dRmQAAAAAOgAAAAAIAACAAAACZAeySJDZ5WgSU9QNrVDZDxdf9pDiGhZA/ucdbHSKDBHAAAAA6pSZayhyAqnQTl5j0ZQ6lDSzDI8RG1zc3Y2zBTIZcTwT4azk0z5/nqv+k5fHb+SEDcabk0fnOoTaU7cp5257PLsFg1KdO57nDcM6MJnk7vAx7winKQqez2kTZwUZoIXRj4koaCGvtsH+s85oaJ3hGQAAAAC6n71Sh9f1vL5KTy6vyEUA6/FlsZCywDkkEe2YQOxkvPhKpDVbo/k6z4A+7pXrfpmOIh7yVH4RM2EQrir2pmzE=",
-      "expires_in": 3599,
-      "token_type": "Bearer",
-      "scope": "https://www.googleapis.com/auth/photoslibrary.sharing https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/photoslibrary",
-      "ExpireDate": "2023-05-14T17:09:51.8115161Z"
-    },
-    "Proof": null
-  },
-  "GooglePhotosUserInfo": {
-    "sub": "100755517507055713680",
-    "name": "content1 silvarc",
-    "given_name": "content1",
-    "picture": "https://lh3.googleusercontent.com/a/AGNmyxYkapby3Gwq4lGbBQBPHp9GEs0n1YqBZWP-jj7b=s96-c",
-    "locale": "en"
-  },
+  "GooglePhotosOAuth2Info": null,
+  "GooglePhotosUserInfo": null,
   "GooglePhotosAlbumID": "AHgfKZ0Gc4A0jiGJgSuyde5u03tnWh7AOMlcl49qrPO6Wgk3qxqaZQWj5fiwCl8TE_iSkhjWVmZo",
   "GooglePhotosIsPublic": true,
   "CheveretoUploader": {
@@ -63,24 +45,24 @@
     "APIKey": null
   },
   "CheveretoDirectURL": true,
-  "VgymeUserKey": "$DPAPIEncrypted$AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAf3s97T9msUarez8crX/36wAAAAACAAAAAAAQZgAAAAEAACAAAAAcimEGb8Fv3W7gXA5YbgWJrQZze6ZBIsI+u/4fpJTaHwAAAAAOgAAAAAIAACAAAABaStD/HbnZ3znpB52CMReRU7xSOF3OiFHLE+2hP6x27jAAAADe8LoXrj03pyd1jbkcwVbGB/ByASOEzr+uBxICMuOZGp9CZ3l6L7/qbLJul5u6DbRAAAAAdEY5xpw7VpzH5i6AM29J/v2ReeYAbeV4PEqrJcYI3Os8KBKWGmtE4qwjt/tn6F/OIDUGv1/0E4uAV2+915PRpQ==",
+  "VgymeUserKey": "",
   "PastebinSettings": {
     "Username": null,
     "Password": null,
     "Exposure": "Unlisted",
     "Expiration": "M1",
     "Title": null,
-    "TextFormat": "csharp",
+    "TextFormat": "text",
     "UserKey": null,
     "RawURL": false
   },
-  "Paste_eeUserKey": "$DPAPIEncrypted$AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAf3s97T9msUarez8crX/36wAAAAACAAAAAAAQZgAAAAEAACAAAAAkIh9xn+8FtywdFG1L+kQn01q9jTsQ+iYn7SqE1ryTrQAAAAAOgAAAAAIAACAAAACRyzkp1yO+u1Xa0SyyJkEJG0Mw2yxs0F+t+y76I5LGXjAAAABkHQzAsw31dpUbBVUYeMHMSy3Qun6ysCqrAB5ksFEUKJ7L8wiwASyV/T+mOYXBFx5AAAAA0QLaMVFK2X+XcYvJdAj8XiVYPakR6NPBZMo1hH7GFF0R0YJ4nuwqUs3qM4cBXMQZF/6nKI60V5ApguZvI9+Hfg==",
+  "Paste_eeUserKey": "",
   "Paste_eeEncryptPaste": false,
   "GistOAuth2Info": {
     "Client_ID": "badfa7b5e0a67e31da88",
     "Client_Secret": "798dacd8f607cbc0777f6b90bd7c447da17263e8",
     "Token": {
-      "access_token": "$DPAPIEncrypted$AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAf3s97T9msUarez8crX/36wAAAAACAAAAAAAQZgAAAAEAACAAAABCPIPSGRsPFwU0L2AasDt+1niqbmdeUGvDIPKqEFs3yQAAAAAOgAAAAAIAACAAAACBzwDIKN+1wnVZbuBuK5UVieIjTVHn+MXcLdzEGwEaoTAAAADjg2ZU7DC1/Q3om3fw8GNiynd7d5iZxsh1ScUFHj70tYzC/SWmncZubqLUzYpi8iRAAAAA7vFTxmejGIi172n+AJ/uQgyKIs62D4Rusgd/PdCUh8P8mBDgxQA2LpYgBStPJpWvRLz62jF5asoHePXJQZieuQ==",
+      "access_token": "$DPAPIEncrypted$AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAf3s97T9msUarez8crX/36wAAAAACAAAAAAAQZgAAAAEAACAAAABysJeH1nL0fu5FxpFZmP1PwmSwhGiwOC1j//csnyyQZQAAAAAOgAAAAAIAACAAAAAyFkBjv0ED5Pb5BbGXmlBtZ3GQKMq7iLPJ2ZfZWBCVIDAAAACxHj+ifrZw1bQsy0R/tbIkmcThxVpUCR36U/PlzJus0hfGkDy2oYY9mmqbz6SB8dJAAAAAOjZhfsa8SFFd4/cjt4LsL6wpcnr38ZqkBHLyi2aKyZzSODdD69mxrxGXdZqeQ7wCcJalvz5s2wHAaqSYvjzxYw==",
       "refresh_token": null,
       "expires_in": 0,
       "token_type": "bearer",
@@ -120,26 +102,8 @@
   "GfycatIsPublic": false,
   "GfycatKeepAudio": true,
   "GfycatTitle": "ShareX",
-  "GoogleDriveOAuth2Info": {
-    "Client_ID": "810697162603-ag350u1fnmf3riubv91otme0v5fkk2d6.apps.googleusercontent.com",
-    "Client_Secret": "mDft-efE0PUcwIRCLG8nkLD9",
-    "Token": {
-      "access_token": "$DPAPIEncrypted$AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAf3s97T9msUarez8crX/36wAAAAACAAAAAAAQZgAAAAEAACAAAAAfZHNBU0hlf3cIFszVa6Q0TibqhlXZTW5EyI3godIdQgAAAAAOgAAAAAIAACAAAAARZ/sFSW2gah/3TuK1VRExALBUXorJn2ykTzHWgmxh2+AAAACjFpjeqfkUJWWWKMTmxicPoTlqFzOS6e/PrVylErQztb6kmuddbadyQnn6bj7gQUNiBN1vIc5VGduRuzLd+t7WivsGL5gFGoNVw9W0KMXvo7BkHfGE0dx0sbZcmo3XIuuGx9f+qU9BBKuZFtnCLB0VGl7+nkPuAhpp+SSdarkBfODzSqY13XbvvsoV0+tx35p0+8BTzmzLwWehEPI6AQ8/JfalP1CYhHLt6S4Rjm4PMP/1y5aAvQ1n3i8yNSurE9KjBS1l5vJIxYBmj36bN52rZSCNJiOibMZDHBAnaqXsAUAAAADnbiPq576LZIoQI6NzdAMwBMpKAq9LFjbfdi3XR5j5c20b6FWR42/Fy6a3GFkLqcTcqOWOtwvFYASA3uN6eJD7",
-      "refresh_token": "$DPAPIEncrypted$AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAf3s97T9msUarez8crX/36wAAAAACAAAAAAAQZgAAAAEAACAAAAD+2S0aYwOKxdHvL/8GaEubcNFU6r+XcMh5LB7qNN/7FAAAAAAOgAAAAAIAACAAAADB7LD5rc/Pwk5KUT0OQIbF8d8LWS2TTTmORUjWuFD2iXAAAADkihBlbc6OylwMbPWdzjZKhQX2kyNYtTc0jCmosk5fQxYxzPFfYYMS2q5p5scpWY6VsHMn3ewfOZdwc0Ya4ZMYnbwyIaDOUdZwdRZvQE/Z6mAjE+YjLjNWEt7ctsMjH3hI61t7sdbdy9bbKtVJ2BPEQAAAAH2rwmX0yS7LIJTz3S3mftIOPe4HSBWXg/Mb0hoCziLgeqJg9IhSWuHVQm2B31p52WrpZn9wI1/EIbJcpywD2Vw=",
-      "expires_in": 3599,
-      "token_type": "Bearer",
-      "scope": "https://www.googleapis.com/auth/drive https://www.googleapis.com/auth/userinfo.profile",
-      "ExpireDate": "2023-10-25T18:42:37.5582535Z"
-    },
-    "Proof": null
-  },
-  "GoogleDriveUserInfo": {
-    "sub": "100755517507055713680",
-    "name": "content1 silvarc",
-    "given_name": "content1",
-    "picture": "https://lh3.googleusercontent.com/a/AGNmyxYkapby3Gwq4lGbBQBPHp9GEs0n1YqBZWP-jj7b=s96-c",
-    "locale": "en"
-  },
+  "GoogleDriveOAuth2Info": null,
+  "GoogleDriveUserInfo": null,
   "GoogleDriveIsPublic": true,
   "GoogleDriveDirectLink": true,
   "GoogleDriveUseFolder": true,

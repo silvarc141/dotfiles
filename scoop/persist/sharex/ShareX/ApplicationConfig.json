@@ -7,7 +7,7 @@
     "UseDefaultAfterUploadJob": true,
     "AfterUploadJob": "CopyURLToClipboard",
     "UseDefaultDestinations": true,
-    "ImageDestination": "Vgyme",
+    "ImageDestination": "Imgur",
     "ImageFileDestination": "GoogleDrive",
     "TextDestination": "Paste_ee",
     "TextFileDestination": "Dropbox",
@@ -778,84 +778,84 @@
   "HistoryCheckURL": false,
   "RecentTasks": [
     {
-      "FilePath": "C:\\Users\\Marta\\Pictures\\Screenshots\\2023-12\\Plzmckjm2y.png",
+      "FilePath": "C:\\Users\\Marta\\Pictures\\Screenshots\\2023-12\\FJw7Z4S5X7.png",
       "URL": null,
       "ThumbnailURL": null,
       "DeletionURL": null,
       "ShortenedURL": null,
-      "Time": "2023-12-16T13:38:07.8571607Z"
+      "Time": "2023-12-20T12:33:54.2193616Z"
     },
     {
-      "FilePath": "C:\\Users\\Marta\\Pictures\\Screenshots\\2023-12\\CM0cGN3ICq.png",
+      "FilePath": "C:\\Users\\Marta\\Pictures\\Screenshots\\2023-12\\2SdpTagclu.png",
       "URL": null,
       "ThumbnailURL": null,
       "DeletionURL": null,
       "ShortenedURL": null,
-      "Time": "2023-12-17T22:01:48.7302329Z"
+      "Time": "2023-12-20T12:35:42.6886861Z"
     },
     {
-      "FilePath": "C:\\Users\\Marta\\Pictures\\Screenshots\\2023-12\\mIq6jFmvbp.png",
+      "FilePath": "C:\\Users\\Marta\\Pictures\\Screenshots\\2023-12\\4mBp5Idi4o.png",
       "URL": null,
       "ThumbnailURL": null,
       "DeletionURL": null,
       "ShortenedURL": null,
-      "Time": "2023-12-17T22:02:28.9034556Z"
+      "Time": "2023-12-20T12:40:32.0449427Z"
     },
     {
-      "FilePath": "C:\\Users\\Marta\\Pictures\\Screenshots\\2023-12\\sS63uHZtr8.png",
+      "FilePath": "C:\\Users\\Marta\\Pictures\\Screenshots\\2023-12\\XNEpBr89gw.png",
       "URL": null,
       "ThumbnailURL": null,
       "DeletionURL": null,
       "ShortenedURL": null,
-      "Time": "2023-12-17T22:02:32.4982504Z"
+      "Time": "2023-12-20T14:08:02.2788684Z"
     },
     {
-      "FilePath": "C:\\Users\\Marta\\Pictures\\Screenshots\\2023-12\\Ccq9swiYuz.png",
+      "FilePath": "C:\\Users\\Marta\\Pictures\\Screenshots\\2023-12\\Gu4trpMzxd.png",
       "URL": null,
       "ThumbnailURL": null,
       "DeletionURL": null,
       "ShortenedURL": null,
-      "Time": "2023-12-17T22:08:42.7445383Z"
+      "Time": "2023-12-20T15:51:37.4874105Z"
     },
     {
-      "FilePath": "C:\\Users\\Marta\\Pictures\\Screenshots\\2023-12\\wK8f23r7tz.png",
+      "FilePath": "C:\\Users\\Marta\\Pictures\\Screenshots\\2023-12\\okPJTVWdft.png",
       "URL": null,
       "ThumbnailURL": null,
       "DeletionURL": null,
       "ShortenedURL": null,
-      "Time": "2023-12-18T12:15:41.9225544Z"
+      "Time": "2023-12-20T16:04:56.715852Z"
     },
     {
-      "FilePath": "C:\\Users\\Marta\\Pictures\\Screenshots\\2023-12\\W95CJOyVB4.png",
+      "FilePath": "C:\\Users\\Marta\\Pictures\\Screenshots\\2023-12\\qnN5uMve4V.png",
       "URL": null,
       "ThumbnailURL": null,
       "DeletionURL": null,
       "ShortenedURL": null,
-      "Time": "2023-12-18T20:18:29.0839546Z"
+      "Time": "2023-12-20T19:47:36.0706854Z"
     },
     {
-      "FilePath": "C:\\Users\\Marta\\Pictures\\Screenshots\\2023-12\\p8QxGDZH24.png",
-      "URL": null,
+      "FilePath": "C:\\Users\\Marta\\Pictures\\Screenshots\\2023-12\\84wQzAE66a.png",
+      "URL": "https://i.vgy.me/UzZ58q.png",
       "ThumbnailURL": null,
-      "DeletionURL": null,
+      "DeletionURL": "https://vgy.me/delete/0745d658-76b8-4b79-be24-774ead4465dc",
       "ShortenedURL": null,
-      "Time": "2023-12-18T23:01:53.1782565Z"
+      "Time": "2023-12-20T20:02:47.9059018Z"
     },
     {
-      "FilePath": "C:\\Users\\Marta\\Pictures\\Screenshots\\2023-12\\iVsfn93V5B.png",
+      "FilePath": "C:\\Users\\Marta\\Pictures\\Screenshots\\2023-12\\43hSI9KBAq.png",
       "URL": null,
       "ThumbnailURL": null,
       "DeletionURL": null,
       "ShortenedURL": null,
-      "Time": "2023-12-19T09:02:54.6760164Z"
+      "Time": "2023-12-20T20:31:42.1478667Z"
     },
     {
-      "FilePath": "C:\\Users\\Marta\\Pictures\\Screenshots\\2023-12\\Tes0TCqoDN.png",
-      "URL": null,
-      "ThumbnailURL": null,
-      "DeletionURL": null,
+      "FilePath": "C:\\Users\\Marta\\Pictures\\Screenshots\\2023-12\\DvFmC3ibcL.png",
+      "URL": "https://i.imgur.com/BlQsVTf.png",
+      "ThumbnailURL": "https://i.imgur.com/BlQsVTfm.jpg",
+      "DeletionURL": "https://imgur.com/delete/CDOxRZinV0oe9gC",
       "ShortenedURL": null,
-      "Time": "2023-12-19T09:05:26.5259892Z"
+      "Time": "2023-12-20T20:31:48.4223108Z"
     }
   ],
   "RecentTasksSave": true,
