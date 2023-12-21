@@ -1,9 +1,10 @@
 primary_light: &primary_light "#FFFFFFFF"
 background_light: &background_light "#FFFFFF55"
 background_dark: &background_dark "transparent"
+workspace_symbol: &workspace_symbol ""
 
 gaps:
-  inner_gap: 2
+  inner_gap: 3
   outer_gap: 0
 
 focus_borders:
@@ -22,30 +23,30 @@ general:
   cursor_follows_focus: false
 
 bar:
-  height: "25"
+  height: "30"
   position: "top"
-  background: "#000000"
+  background: "transparent"
   foreground: *primary_light
   #font_family: "Segoe UI"
-  #font_family: "CaskaydiaCove Nerd Font"
-  font_family: "CodeNewRoman Nerd Font"
+  font_family: "CaskaydiaCove Nerd Font"
+  #font_family: "CodeNewRoman Nerd Font"
   #font_family:  "Iosevka Nerd Font"
-  font_size: "18px"
-  font_weight: "200"
-  padding: "0"
-  margin: "0"
-  offset_x: "0"
-  offset_y: "0"
+  padding: 0
+  margin: 0
+  offset_x: 0
+  offset_y: 0
   border_radius: 0
   border_width: 0
   border_color: "transparent"
 
   components_center:
     - type: "workspaces"
-      background: "#000000"
-      border_radius: 0
+      background: "transparent"
       border_width: 0
-      border_color: "#000000"
+      padding: 0
+      margin: 0
+      offset_x: 0
+      offset_y: 0
 
       focused_workspace_foreground: *primary_light
       focused_workspace_background: *background_dark
@@ -66,7 +67,12 @@ bar:
       #  label_collapse_text: " "
   components_right:
       - type: "clock"
-        time_formatting: "HH:mm"
+        font_family:  "Iosevka Nerd Font"
+        font_size: "15px"
+        font_weight: "800"
+        foreground: *primary_light
+        margin: "0 10 0 0"
+        time_formatting: "ddd dd/MM/yy   HH:mm"
   #   - type: "binding mode"
   #     foreground: *background_dark
   #     background: *primary_light
@@ -89,44 +95,44 @@ bar:
 
 workspaces:
   - name: "m0w0"
-    display_name: ""
+    display_name: *workspace_symbol
     bind_to_monitor: 1
     keep_alive: true
   - name: "m0w1"
-    display_name: ""
+    display_name: *workspace_symbol
     bind_to_monitor: 1
     keep_alive: true
   - name: "m0w2"
-    display_name: ""
+    display_name: *workspace_symbol
     bind_to_monitor: 1
     keep_alive: true
   - name: "m0w3"
-    display_name: ""
+    display_name: *workspace_symbol
     bind_to_monitor: 1
     keep_alive: true
   - name: "m0w4"
-    display_name: ""
+    display_name: *workspace_symbol
     bind_to_monitor: 1
     keep_alive: true
 
   - name: "m1w0"
-    display_name: ""
+    display_name: *workspace_symbol
     bind_to_monitor: 2
     keep_alive: true
   - name: "m1w1"
-    display_name:  ""
+    display_name:  *workspace_symbol
     bind_to_monitor: 2
     keep_alive: true
   - name: "m1w2"
-    display_name: ""
+    display_name: *workspace_symbol
     bind_to_monitor: 2
     keep_alive: true
   - name: "m1w3"
-    display_name: ""
+    display_name: *workspace_symbol
     bind_to_monitor: 2
     keep_alive: true
   - name: "m1w4"
-    display_name: ""
+    display_name: *workspace_symbol
     bind_to_monitor: 2
     keep_alive: true
 
@@ -161,6 +167,9 @@ window_rules:
 
   - command: "set floating"
     match_process_name: "LariLauncher"
+
+  - command: "set floating"
+    match_process_name: "copyq"
 
   - command: "set floating"
     match_process_name: "Unity Hub"
