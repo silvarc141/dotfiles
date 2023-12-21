@@ -1,7 +1,7 @@
 primary_light: &primary_light "#FFFFFFFF"
 background_light: &background_light "#FFFFFF55"
 background_dark: &background_dark "transparent"
-workspace_symbol: &workspace_symbol ""
+workspace_symbol: &workspace_symbol " "
 
 gaps:
   inner_gap: 3
@@ -205,7 +205,7 @@ window_rules:
   - commands: ["move to workspace m1w0", "resize borders 0px 1px 1px 1px", "move left", "set width +66%"]
     match_process_name: "ArmCord"
 
-  - commands: ["resize borders 0px 1px 1px 1px", "move to workspace m1w0"]
+  - commands: ["resize borders 0", "move to workspace m1w0"]
     match_process_name: "Obsidian"
 
   - command: "move to workspace m1w1"

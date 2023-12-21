@@ -35,7 +35,9 @@ scrolling:
 
 font:
   normal:
+    #family: JetBrainsMono Nerd Font Mono
     family: CaskaydiaCove Nerd Font Mono
+    #family: Iosevka Nerd Font
     #style: Regular
   #bold:
     #family: monospace

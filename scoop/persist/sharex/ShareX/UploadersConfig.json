@@ -58,19 +58,7 @@
   },
   "Paste_eeUserKey": "",
   "Paste_eeEncryptPaste": false,
-  "GistOAuth2Info": {
-    "Client_ID": "badfa7b5e0a67e31da88",
-    "Client_Secret": "798dacd8f607cbc0777f6b90bd7c447da17263e8",
-    "Token": {
-      "access_token": "$DPAPIEncrypted$AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAf3s97T9msUarez8crX/36wAAAAACAAAAAAAQZgAAAAEAACAAAABysJeH1nL0fu5FxpFZmP1PwmSwhGiwOC1j//csnyyQZQAAAAAOgAAAAAIAACAAAAAyFkBjv0ED5Pb5BbGXmlBtZ3GQKMq7iLPJ2ZfZWBCVIDAAAACxHj+ifrZw1bQsy0R/tbIkmcThxVpUCR36U/PlzJus0hfGkDy2oYY9mmqbz6SB8dJAAAAAOjZhfsa8SFFd4/cjt4LsL6wpcnr38ZqkBHLyi2aKyZzSODdD69mxrxGXdZqeQ7wCcJalvz5s2wHAaqSYvjzxYw==",
-      "refresh_token": null,
-      "expires_in": 0,
-      "token_type": "bearer",
-      "scope": "gist",
-      "ExpireDate": "0001-01-01T00:00:00Z"
-    },
-    "Proof": null
-  },
+  "GistOAuth2Info": null,
   "GistPublishPublic": false,
   "GistRawURL": true,
   "GistCustomURL": "",
