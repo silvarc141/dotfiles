@@ -1,10 +1,10 @@
 {
   "version": 1,
   "sshAgent.sshAuthorizatonModel": "application-and-terminal-session",
-  "ui.routes.lastUsedRoute": "{\"type\":\"ItemDetail\",\"content\":{\"itemListRoute\":{\"unlockedRoute\":{\"collectionUuid\":\"QNSTZS7E4RDRREM53JMVOENSJM\"},\"itemListType\":{\"type\":\"Vault\",\"content\":\"5\"},\"category\":null,\"sortBehavior\":null},\"itemId\":\"91\"}}",
-  "ui.itemList.sortBehavior": "{\"default\":{\"sortKey\":\"dateCreated\",\"sortOrder\":\"descending\"},\"password_strength\":{\"sortKey\":\"dateModified\",\"sortOrder\":\"descending\"},\"search\":{\"sortKey\":\"dateModified\",\"sortOrder\":\"descending\"}}",
+  "ui.routes.lastUsedRoute": "{\"type\":\"ItemDetail\",\"content\":{\"itemListRoute\":{\"unlockedRoute\":{\"collectionUuid\":\"QNSTZS7E4RDRREM53JMVOENSJM\"},\"itemListType\":{\"type\":\"Vault\",\"content\":\"23\"},\"category\":null,\"sortBehavior\":null},\"itemId\":\"8D\"}}",
+  "ui.itemList.sortBehavior": "{\"default\":{\"sortKey\":\"title\",\"sortOrder\":\"ascending\"},\"password_strength\":{\"sortKey\":\"dateModified\",\"sortOrder\":\"descending\"},\"search\":{\"sortKey\":\"dateModified\",\"sortOrder\":\"descending\"}}",
   "passwordGenerator.type": "password-generator-menu-entry-type-memorable-password",
-  "passwordGenerator.size.words": 4,
+  "passwordGenerator.size.words": 3,
   "passwordGenerator.fullWords": true,
   "passwordGenerator.capitalize": true,
   "passwordGenerator.separatorType": "password-generator-menu-entry-separator-numbers-and-symbols",
@@ -28,7 +28,7 @@
   "sshAgent.commitSigningBannerDismissed": true,
   "app.SkipArchiveAlert": true,
   "passwordGenerator.size.answer": 5,
-  "passwordGenerator.size.characters": 14,
+  "passwordGenerator.size.characters": 16,
   "passwordGenerator.includeSymbols": true,
   "authTags": {
     "app.SkipArchiveAlert": "hG02KFb43w6NXtIXqkq73EAEoy8P7DALAF8wfgkbVjc",
@@ -40,14 +40,14 @@
     "keybinds.lock": "U8I0x+uBtBKej0pcf9rZB+z+zP2d3NBWjNNIoo4N7vY",
     "keybinds.open": "UtEXofcAyelBz3IrcmU4ZQRhOaN/lze02ZGnTH92RS8",
     "keybinds.quickAccess": "T8W4L64a3LK0gvpNMgizzU53hB4Ds9IUhqKXkDiO0IU",
-    "passwordGenerator.capitalize": "L/0SL1CK6iZOlasIMROT4p5UQjol0PSodwKSfIo5Vm0",
-    "passwordGenerator.fullWords": "jJTE3rhugCrapyGWJ+Y1glNzb7y/0p6gbXtdjbzoC1o",
+    "passwordGenerator.capitalize": "OFdvhEZDlufuye2EjZtNnZDDMU3Ii0SqcE8WVusB8FY",
+    "passwordGenerator.fullWords": "V1xsUTUg5+tixZdffnCh4er7E5f55DvYtJBANxh++lA",
     "passwordGenerator.includeSymbols": "5hK9Zt9mDyT16nnBEVAYmAXyDSxgyboM4nbbIdiQo2g",
-    "passwordGenerator.separatorType": "dKE2oA4B3u1LhdCVb8Ykl+Kj4Tv61v5juK1qeTJrHvE",
+    "passwordGenerator.separatorType": "ZT8OsNqneCAwqxbZA74fdZ4BCxUX33o9uNfNPF1ftps",
     "passwordGenerator.size.answer": "iEfNZNc4xG9yVlpg+bb3kuI5A0c9gXPXvDYnyxhYdqQ",
-    "passwordGenerator.size.characters": "WdrXZsUXd3vYgH8Xs7svZzVVAKWykXeRrqStBXAXYBY",
-    "passwordGenerator.size.words": "vxAaWaRRezSUWkNCgj5AfvWQ2c8sYADvNb3aj2QmihI",
-    "passwordGenerator.type": "UHSsDbnuG4ydvKX/deKE/iWyZS8aivQFPNXfTYftdqs",
+    "passwordGenerator.size.characters": "8XQq3jb8BVXjjadprFw71HQoYsg9UEo7Hkd45uKVz3U",
+    "passwordGenerator.size.words": "IbsDWC06AAhy1Kf3faZmeQbvqGqaz6a4ZD9vZJZPRhw",
+    "passwordGenerator.type": "fLjS1bg1gRTJ35hC5IjbTC9j+7sMYSdxG3xN/mvmro0",
     "security.authenticatedUnlock.enabled": "3CrPI8nBRE7G33sP9cH5Ukksdg343b83h0FUwjYTBdU",
     "sidebar.showCategories": "cAYDpRYaVVqxzQ7LBRWOe7HpXJwLJeCySyOFWaHiH98",
     "sidebar.showTags": "Uefl8IYP4HFXG80ZVJmIXuxI4zzq+XdjeyoweAP2onM",
@@ -59,7 +59,7 @@
     "sshAgent.sshSessionDuration": "+Y9ntX0qzpcpPm6m5cnR7PfEK59O7lNmjoI18F4f+qI",
     "sshAgent.storeKeyTitles": "1F7CfqBU0A7i7q1x0aszqzGigLPE0TrD+SKNDUmbL5I",
     "sshAgent.storeSshKeyTitlesResponseGiven": "ZsBh4Z+BQ54FfGo5eF9d/VQt0+7GgoCuYXWdz78W1UI",
-    "ui.itemList.sortBehavior": "em7k+SKhVRKCKNNupLxIMXGxXgQDMnoe7J3W4b822/w",
-    "ui.routes.lastUsedRoute": "VnlqGTJu6cnt4gaqf2AbLlTYnPPPmlAOtu+jPGlGuVg"
+    "ui.itemList.sortBehavior": "cvJ0BA86n7CcJDCUJ4XRCO6uCsKr4Si9jvws+kMvD2o",
+    "ui.routes.lastUsedRoute": "vkcHQS3ada2kzhKFHLe7cR5K0o6ivqnZzK7Gne+Iilo"
   }
 }
