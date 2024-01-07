@@ -10,8 +10,6 @@ global ShimsDir := HomeDir "\scoop\shims"
 global ReleaseDuration := 200
 
 #Include base.ahk
-#Include launch.ahk
 #Include home-row-navigation.ahk
-#Include fluent-search.ahk
 ; #Include glazewm.ahk
 ; #Include komorebi.ahk
