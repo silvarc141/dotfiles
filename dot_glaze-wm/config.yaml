@@ -198,7 +198,7 @@ window_rules:
     match_process_name: "VSCodium"
     match_class_name: "Chrome_WidgetWin_1"
 
-  - commands: ["move to workspace m1w0", "move left", "set width 66%"]
+  - commands: ["move to workspace m1w0", "move left"]
     match_process_name: "Discord"
   - commands: ["move to workspace m1w0", "resize borders 0px 1px 1px 1px", "move left", "set width 66%"]
     match_process_name: "Vesktop"
