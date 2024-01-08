@@ -1,10 +1,11 @@
-^#!r:: Reload
-^#!e:: Edit
-^#!d:: KeyHistory
+^+!r:: Reload
+^+!e:: Edit
+^+!d:: KeyHistory
 #SuspendExempt
-^#!s:: Suspend
+^+!s:: Suspend
 #SuspendExempt False
 
+A_MenuMaskKey := "vkFF"
 SetCapsLockState("AlwaysOff")
 CapsLock::Ctrl
 
@@ -12,49 +13,44 @@ CapsLock::Ctrl
 
 ActivateWindowWhenExists(criteria)
 {
-	while (WinExist(criteria) == false)
-	{
-		Sleep 200
-	}
+    while (WinExist(criteria) == false)
+    {
+        Sleep 200
+    }
 
-	WinActivate criteria
+    WinActivate criteria
 }
 
 #+^f::
 {
-	RunDeelevatedDefault AppsDir "\everything\current\Everything.exe"
-	ActivateWindowWhenExists "ahk_exe everything.exe"
+    RunDeelevatedDefault AppsDir "\everything\current\Everything.exe"
+    ActivateWindowWhenExists "ahk_exe everything.exe"
 }
 
 ^!t::
 {
-	RunDeelevatedDefault ShimsDir '\alacritty-config.exe --working-directory ' HomeDir
-	ActivateWindowWhenExists "Alacritty"
+    RunDeelevatedDefault ShimsDir '\alacritty-config.exe --working-directory ' HomeDir
+    ActivateWindowWhenExists "Alacritty"
 }
 
 ^!+t::
 {
-	Run ShimsDir '\alacritty-config.exe --working-directory ' HomeDir, '', 'Hide'
-	ActivateWindowWhenExists "Alacritty"
+    Run ShimsDir '\alacritty-config.exe --working-directory ' HomeDir, '', 'Hide'
+    ActivateWindowWhenExists "Alacritty"
 }
 
 #e::
 {
-	Run 'explorer.exe ' HomeDir
+    Run 'explorer.exe ' HomeDir
 }
 
 #b::
 {
-    Send "{Blind} vkE8"
-	;Run AppsDir '\firefox\current\firefox.exe'
-	;RunDeelevatedDefault AppsDir '\firefox\current\firefox.exe'
-	ActivateWindowWhenExists "ahk_exe firefox.exe"
+    RunDeelevatedDefault AppsDir '\firefox\current\firefox.exe'
+    ActivateWindowWhenExists "ahk_exe firefox.exe"
 }
 
-A_MenuMaskKey := "vkFF"
-;~LWin::vkFF
-
-global LastLWinPressTime := 0
+;global LastLWinPressTime := 0
 
 ; LWin::F24
 ;LWin::LWin
@@ -82,14 +78,14 @@ global LastLWinPressTime := 0
 ; 	Send "{Blind}l"
 ; }
 
-#f::
-{
-	Send "{F23}" ; dec:134 hex:86
-	Send "{Blind}{vkFF}" ; show FS in-window
-}
+;#f::
+;{
+;    Send "{F23}" ; dec:134 hex:86
+;    Send "{Blind}{vkFF}" ; show FS in-window
+;}
 
-#^f::
-{
-	Send "{F22}" ; dec:133 hex:85
-	Send "{Blind}{vkFF}" ; show FS hints
-}
+;#^f::
+;{
+;    Send "{F22}" ; dec:133 hex:85
+;    Send "{Blind}{vkFF}" ; show FS hints
+;}
