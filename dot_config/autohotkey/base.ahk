@@ -45,14 +45,20 @@ ActivateWindowWhenExists(criteria)
 
 #b::
 {
-	RunDeelevatedDefault AppsDir '\firefox\current\firefox.exe'
+    Send "{Blind} vkE8"
+	;Run AppsDir '\firefox\current\firefox.exe'
+	;RunDeelevatedDefault AppsDir '\firefox\current\firefox.exe'
 	ActivateWindowWhenExists "ahk_exe firefox.exe"
 }
+
+A_MenuMaskKey := "vkFF"
+;~LWin::vkFF
 
 global LastLWinPressTime := 0
 
 ; LWin::F24
-
+;LWin::LWin
+;LWin up::vkFF
 ; ~LWin::
 ; {
 ; 	if (A_PriorHotkey != "~LWin")
