@@ -66,13 +66,13 @@ bar:
       # label_expand_text: " "
       #  label_collapse_text: " "
   components_right:
-      - type: "clock"
-        font_family:  "Iosevka Nerd Font"
-        font_size: "15px"
-        font_weight: "800"
-        foreground: *primary_light
-        margin: "0 10 0 0"
-        time_formatting: "ddd dd/MM/yy   HH:mm"
+    - type: "clock"
+      font_family: "Iosevka Nerd Font"
+      font_size: "15px"
+      font_weight: "800"
+      foreground: *primary_light
+      margin: "0 10 0 0"
+      time_formatting: "ddd dd/MM/yy   HH:mm"
   #   - type: "binding mode"
   #     foreground: *background_dark
   #     background: *primary_light
@@ -120,7 +120,7 @@ workspaces:
     bind_to_monitor: 2
     keep_alive: true
   - name: "m1w1"
-    display_name:  *workspace_symbol
+    display_name: *workspace_symbol
     bind_to_monitor: 2
     keep_alive: true
   - name: "m1w2"
@@ -200,9 +200,21 @@ window_rules:
 
   - commands: ["move to workspace m1w0", "move left"]
     match_process_name: "Discord"
-  - commands: ["move to workspace m1w0", "resize borders 0px 1px 1px 1px", "move left", "set width 66%"]
+  - commands:
+      [
+        "move to workspace m1w0",
+        "resize borders 0px 1px 1px 1px",
+        "move left",
+        "set width 66%",
+      ]
     match_process_name: "Vesktop"
-  - commands: ["move to workspace m1w0", "resize borders 0px 1px 1px 1px", "move left", "set width 66%"]
+  - commands:
+      [
+        "move to workspace m1w0",
+        "resize borders 0px 1px 1px 1px",
+        "move left",
+        "set width 66%",
+      ]
     match_process_name: "ArmCord"
 
   - commands: ["resize borders 0", "move to workspace m1w0"]
@@ -218,7 +230,8 @@ window_rules:
     match_process_name: "Spark Desktop"
     match_class_name: "Chrome_WidgetWin_1"
 
-  - commands: ["move to workspace m1w2", "tiling direction vertical", "move down"]
+  - commands:
+      ["move to workspace m1w2", "tiling direction vertical", "move down"]
     match_process_name: "Beeper"
 
   - command: "move to workspace m1w3"
@@ -301,11 +314,11 @@ keybindings:
   - command: "reload config"
     binding: "Alt+Shift+G"
 
-  - command: "set minimized"
-    binding: "Alt+Shift+X"
+  # - command: "set minimized"
+  #   binding: "Alt+Shift+X"
 
-    #- command: "toggle floating"
-    #binding: "Alt+Shift+T"
+  # - command: "toggle floating"
+  #   binding: "Alt+Shift+T"
 
   # - command: "focus workspace next"
   #   binding: "Alt+Tab"
@@ -315,65 +328,48 @@ keybindings:
 
   - command: "focus left"
     binding: "Alt+Shift+H"
-
   - command: "focus down"
     binding: "Alt+Shift+J"
-
   - command: "focus up"
     binding: "Alt+Shift+K"
-
   - command: "focus right"
     binding: "Alt+Shift+L"
 
   - command: "resize width +10%"
     binding: "Alt+Shift+O"
-
   - command: "resize width -10%"
     binding: "Alt+Shift+Y"
-
   - command: "resize height +10%"
     binding: "Alt+Shift+U"
-
   - command: "resize height -10%"
     binding: "Alt+Shift+I"
 
   - command: "focus workspace m0w0"
     binding: "Alt+Shift+Q"
-
   - command: "focus workspace m0w1"
     binding: "Alt+Shift+W"
-
   - command: "focus workspace m0w2"
     binding: "Alt+Shift+E"
-
   - command: "focus workspace m0w3"
     binding: "Alt+Shift+R"
-
   - command: "focus workspace m0w4"
     binding: "Alt+Shift+T"
-
   - command: "focus workspace m1w0"
     binding: "Alt+Shift+1"
-
   - command: "focus workspace m1w1"
     binding: "Alt+Shift+2"
-
   - command: "focus workspace m1w2"
     binding: "Alt+Shift+3"
-
   - command: "focus workspace m1w3"
     binding: "Alt+Shift+4"
-
   - command: "focus workspace m1w4"
     binding: "Alt+Shift+5"
 
-# ; Mouse
+  # ; Mouse
 
   - command: "focus workspace next"
     binding: "F13"
-
   - command: "focus workspace prev"
     binding: "F14"
-
   - command: "toggle maximized"
     binding: "F17"
