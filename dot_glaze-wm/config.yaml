@@ -261,115 +261,100 @@ window_rules:
 binding_modes:
   - name: "send"
     keybindings:
-      - commands: ["binding mode none", "move to workspace m0w0"]
-        binding: "Alt+Shift+Q"
-      - commands: ["binding mode none", "move to workspace m0w1"]
-        binding: "Alt+Shift+W"
-      - commands: ["binding mode none", "move to workspace m0w2"]
-        binding: "Alt+Shift+E"
-      - commands: ["binding mode none", "move to workspace m0w3"]
-        binding: "Alt+Shift+R"
-      - commands: ["binding mode none", "move to workspace m0w4"]
-        binding: "Alt+Shift+T"
-      - commands: ["binding mode none", "move to workspace m1w0"]
-        binding: "Alt+Shift+1"
-      - commands: ["binding mode none", "move to workspace m1w1"]
-        binding: "Alt+Shift+2"
-      - commands: ["binding mode none", "move to workspace m1w2"]
-        binding: "Alt+Shift+3"
-      - commands: ["binding mode none", "move to workspace m1w3"]
-        binding: "Alt+Shift+4"
-      - commands: ["binding mode none", "move to workspace m1w4"]
-        binding: "Alt+Shift+5"
       - commands: ["binding mode none", "move left"]
-        binding: "Alt+Shift+H"
+        binding: "NumPad4"
       - commands: ["binding mode none", "move down"]
-        binding: "Alt+Shift+J"
+        binding: "NumPad2"
       - commands: ["binding mode none", "move up"]
-        binding: "Alt+Shift+K"
+        binding: "NumPad8"
       - commands: ["binding mode none", "move right"]
-        binding: "Alt+Shift+L"
+        binding: "NumPad6"
+
+      - commands: ["binding mode none", "move to workspace m0w0"]
+        binding: "F18"
+      - commands: ["binding mode none", "move to workspace m0w1"]
+        binding: "F19"
+      - commands: ["binding mode none", "move to workspace m0w2"]
+        binding: "F20"
+      - commands: ["binding mode none", "move to workspace m0w3"]
+        binding: "F21"
+      - commands: ["binding mode none", "move to workspace m0w4"]
+        binding: "decimal"
+
+      - commands: ["binding mode none", "move to workspace m1w0"]
+        binding: "F13"
+      - commands: ["binding mode none", "move to workspace m1w1"]
+        binding: "F14"
+      - commands: ["binding mode none", "move to workspace m1w2"]
+        binding: "F15"
+      - commands: ["binding mode none", "move to workspace m1w3"]
+        binding: "F16"
+      - commands: ["binding mode none", "move to workspace m1w4"]
+        binding: "F17"
+
       - command: "binding mode none"
         binding: "Escape"
 
 keybindings:
   - command: "tiling direction toggle"
-    binding: "Alt+Shift+Z"
-
+    binding: "Divide"
   - command: "binding mode send"
-    binding: "Alt+Shift+S"
-
+    binding: "Multiply"
   - command: "close"
-    binding: "Alt+Shift+D"
-
+    binding: "NumPad5"
   - command: "toggle maximized"
-    binding: "Alt+Shift+A"
-
+    binding: "F24"
   - command: "focus mode toggle"
-    binding: "Alt+Shift+F"
-
+    binding: "NumPad0"
   - command: "exit wm"
-    binding: "Alt+Shift+B"
-
+    binding: "Subtract"
   - command: "reload config"
-    binding: "Alt+Shift+G"
-
+    binding: "Add"
+  - command: "focus workspace next"
+    binding: "F22"
+  - command: "focus workspace prev"
+    binding: "F23"
+  # - command: "toggle floating"
+  #   binding: "Alt+Shift+T"
   # - command: "set minimized"
   #   binding: "Alt+Shift+X"
 
-  # - command: "toggle floating"
-  #   binding: "Alt+Shift+T"
-
-  # - command: "focus workspace next"
-  #   binding: "Alt+Tab"
-
-  # - command: "focus workspace prev"
-  #   binding: "Alt+Shift+Tab"
+  - command: "resize width +10%"
+    binding: "NumPad1"
+  - command: "resize width -10%"
+    binding: "NumPad3"
+  - command: "resize height +10%"
+    binding: "NumPad7"
+  - command: "resize height -10%"
+    binding: "NumPad9"
 
   - command: "focus left"
-    binding: "Alt+Shift+H"
+    binding: "NumPad4"
   - command: "focus down"
-    binding: "Alt+Shift+J"
+    binding: "NumPad2"
   - command: "focus up"
-    binding: "Alt+Shift+K"
+    binding: "NumPad8"
   - command: "focus right"
-    binding: "Alt+Shift+L"
+    binding: "NumPad6"
 
-  - command: "resize width +10%"
-    binding: "Alt+Shift+O"
-  - command: "resize width -10%"
-    binding: "Alt+Shift+Y"
-  - command: "resize height +10%"
-    binding: "Alt+Shift+U"
-  - command: "resize height -10%"
-    binding: "Alt+Shift+I"
+  - command: "focus workspace m1w0"
+    binding: "F13"
+  - command: "focus workspace m1w1"
+    binding: "F14"
+  - command: "focus workspace m1w2"
+    binding: "F15"
+  - command: "focus workspace m1w3"
+    binding: "F16"
+  - command: "focus workspace m1w4"
+    binding: "F17"
 
   - command: "focus workspace m0w0"
-    binding: "Alt+Shift+Q"
+    binding: "F18"
   - command: "focus workspace m0w1"
-    binding: "Alt+Shift+W"
+    binding: "F19"
   - command: "focus workspace m0w2"
-    binding: "Alt+Shift+E"
+    binding: "F20"
   - command: "focus workspace m0w3"
-    binding: "Alt+Shift+R"
+    binding: "F21"
   - command: "focus workspace m0w4"
-    binding: "Alt+Shift+T"
-  - command: "focus workspace m1w0"
-    binding: "Alt+Shift+1"
-  - command: "focus workspace m1w1"
-    binding: "Alt+Shift+2"
-  - command: "focus workspace m1w2"
-    binding: "Alt+Shift+3"
-  - command: "focus workspace m1w3"
-    binding: "Alt+Shift+4"
-  - command: "focus workspace m1w4"
-    binding: "Alt+Shift+5"
-
-  # ; Mouse
-
-  - command: "focus workspace next"
-    binding: "F13"
-  - command: "focus workspace prev"
-    binding: "F14"
-  - command: "toggle maximized"
-    binding: "F17"
+    binding: "Decimal"

@@ -16,13 +16,128 @@ global AppsDir := HomeDir "\scoop\apps"
 global ShimsDir := HomeDir "\scoop\shims"
 global ReleaseDuration := 200
 
-#Include de-elevated-run.lib.ahk
 
 SetNumLockState("AlwaysOn")
 SetCapsLockState("AlwaysOff")
 CapsLock::Ctrl
 
-#Include launch-apps.ahk
-#Include home-row-navigation.ahk
-; #Include glazewm.ahk
-; #Include komorebi.ahk
+; launch apps
+#Include de-elevated-run.lib.ahk
+
+Activate(criteria)
+{
+    WinWait criteria
+    WinActivate criteria
+}
+
+F12 & c::
+{
+    RunDeelevatedDefault ShimsDir '\alacritty-config.exe --working-directory ' HomeDir
+    Activate "Alacritty"
+}
+
+#HotIf GetKeyState("Shift", "P")
+F12 & c::
+{
+    Run ShimsDir '\alacritty-config.exe --working-directory ' HomeDir, '', 'Hide'
+    Activate "Alacritty"
+}
+#HotIf
+
+F12 & x::
+{
+    Run 'explorer.exe ' HomeDir
+}
+
+F12 & v::
+{
+    RunDeelevatedDefault AppsDir "\everything\current\Everything.exe"
+    Activate "ahk_exe everything.exe"
+}
+
+F12 & b::
+{
+    RunDeelevatedDefault AppsDir '\firefox\current\firefox.exe'
+    Activate "ahk_exe firefox.exe"
+}
+
+F12 & z::
+{
+    ; lock workstation?
+}
+
+F12 & \::
+{
+    RunDeelevatedDefault '"C:\Program Files\1Password\app\8\1Password.exe" --quick-access'
+}
+
+F12 & Space::
+{
+    ; launcher
+}
+
+; glazewm
+
+F12 & a::Numpad0 ; focus mode toggle
+F12 & s::NumpadMult ; binding mode send
+F12 & d::Numpad5 ; close
+F12 & f::F24 ; toggle maximized
+F12 & g::NumpadAdd ; reload config
+F12 & z::NumpadDiv ; tiling direction toggle
+F12 & y::NumpadSub ; exit wm
+
+F12 & o::Numpad1 ; resize width +10%
+F12 & y::Numpad3 ; resize width -10%
+F12 & u::Numpad7 ; resize height +10%
+F12 & i::Numpad9 ; resize height -10%
+
+F12 & h::Numpad4 ; focus left
+F12 & j::Numpad2 ; focus down
+F12 & k::Numpad8 ; focus up
+F12 & l::Numpad6 ; focus right
+
+F12 & 1::F13 ; focus workspace m1w0
+F12 & 2::F14 ; focus workspace m1w1
+F12 & 3::F15 ; focus workspace m1w2
+F12 & 4::F16 ; focus workspace m1w3
+F12 & 5::F17 ; focus workspace m1w4
+
+F12 & q::F18 ; focus workspace m0w0
+F12 & w::F19 ; focus workspace m0w1
+F12 & e::F20 ; focus workspace m0w2
+F12 & r::F21 ; focus workspace m0w3
+F12 & t::NumpadDot ; focus workspace m0w4
+
+F12 & ]::F22 ; focus workspace next
+F12 & [::F23 ; focus workspace prev
+
+; homerow navigation
+
+~`; & h::Left
+~`; & j::Down
+~`; & k::Up
+~`; & l::Right
+~`; & m::PgUp
+~`; & n::PgDn
+~`; & u::Home
+~`; & o::End
+~`; & i::Enter
+~`; & ,::BackSpace
+~`; & .::Delete
+
+*;::
+{
+	static pressed
+	pressed := True
+	SetTimer Expire() => pressed := false, -ReleaseDuration
+	KeyWait ";"
+
+	if (A_ThisHotkey = "*;" and pressed = True)
+	{
+		SetTimer Expire, 0
+		SendInput "{Blind}{;}"
+		Return
+	}
+
+	Return
+}
