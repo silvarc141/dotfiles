@@ -40,6 +40,22 @@ RunDeelevated(command, launcherScriptName)
 
 RunDeelevatedDefault(command) => RunDeelevated(command, "de-elevated-run-init.ahk")
 
+ActivateWindow(criteria)
+{
+	WinWait(criteria)
+    WinActivate criteria
+}
+
+RunDeelevatedDefaultNoWait(command)
+{
+	Callback()
+	{
+		Send_WM_COPYDATA(command, "de-elevated-run-init.ahk ahk_class AutoHotkey")
+	}
+
+	SetTimer(Callback, -1000)
+}
+
 Send_WM_COPYDATA(StringToSend, TargetScriptTitle)
 ; This function sends the specified string to the specified window and returns the reply.
 ; The reply is 1 if the target window processed the message, or 0 if it ignored it.
@@ -57,6 +73,7 @@ Send_WM_COPYDATA(StringToSend, TargetScriptTitle)
 	TimeOutTime := 4000  ; Optional. Milliseconds to wait for response from receiver.ahk. Default is 5000
 	; Must use SendMessage not PostMessage.
 	RetValue := SendMessage(0x004A, 0, CopyDataStruct, , TargetScriptTitle, , , , TimeOutTime) ; 0x004A is WM_COPYDATA.
+
 	DetectHiddenWindows Prev_DetectHiddenWindows  ; Restore original setting for the caller.
 	SetTitleMatchMode Prev_TitleMatchMode         ; Same.
 	return RetValue  ; Return SendMessage's reply back to our caller.
