@@ -279,7 +279,7 @@ binding_modes:
       - commands: ["binding mode none", "move to workspace m0w3"]
         binding: "F21"
       - commands: ["binding mode none", "move to workspace m0w4"]
-        binding: "decimal"
+        binding: "Decimal"
 
       - commands: ["binding mode none", "move to workspace m1w0"]
         binding: "F13"
