@@ -1,47 +1,23 @@
-GlazeRun(command) => RunWait("glazewm command `\`"`"`"" command "`\`"`"`"", , "Hide")
+F24 & z::NumpadDiv ; tiling direction toggle
+F24 & s::NumpadMult ; binding mode send
+F24 & c::NumpadDot ; close
+F24 & a::NumpadEnter ; toggle maximized
+F24 & f::Numpad0 ; focus mode toggle
+F24 & b::NumpadSub ; exit wm
+F24 & g::NumpadAdd ; reload config
 
-F24 & w::GlazeRun("close")
-F24 & v::GlazeRun("tiling direction toggle")
-;F24 & +f:: GlazeRun("toggle maximized")
-;F24 & +q:: GlazeRun("exit wm")
-;F24 & +r:: GlazeRun("reload config")
-;F24 & Tab:: GlazeRun("focus workspace next")
-;F24 & +Tab:: GlazeRun("focus workspace prev")
-; F24 & CapsLock:: GlazeRun("cycle-monitor next")
-; F24 & +CapsLock:: GlazeRun("cycle-monitor previous")
-F24 & h:: GlazeRun("focus left")
-F24 & j:: GlazeRun("focus down")
-F24 & k:: GlazeRun("focus up")
-F24 & l:: GlazeRun("focus right")
-;F24 & +h:: GlazeRun("move left")
-;F24 & +j:: GlazeRun("move down")
-;F24 & +k:: GlazeRun("move up")
-;F24 & +l:: GlazeRun("move right")
-; F24 & ^h:: GlazeRun("stack left")
-; F24 & ^j:: GlazeRun("stack down")
-; F24 & ^k:: GlazeRun("stack up")
-; F24 & ^l:: GlazeRun("stack right")
-; F24 & x:: GlazeRun("flip-layout horizontal")
-; F24 & y:: GlazeRun("flip-layout vertical")
-F24 & =:: GlazeRun("resize width +2%")
-F24 & -:: GlazeRun("resize width -2%")
-;F24 & +=:: GlazeRun("resize height +2%")
-;F24 & +-:: GlazeRun("resize height -2%")
-F24 & 1:: GlazeRun("focus workspace 0")
-F24 & 2:: GlazeRun("focus workspace 1")
-F24 & 3:: GlazeRun("focus workspace 2")
-F24 & 4:: GlazeRun("focus workspace 3")
-;F24 & +1:: GlazeRun("move to workspace 0")
-;F24 & +2:: GlazeRun("move to workspace 1")
-;F24 & +3:: GlazeRun("move to workspace 2")
-;F24 & +4:: GlazeRun("move to workspace 3")
+F24 & o::Numpad1 ; resize width +10%
+F24 & y::Numpad3 ; resize width -10%
+F24 & u::Numpad7 ; resize height +10%
+F24 & i::Numpad9 ; resize height -10%
 
-; Mouse
-;F13:: GlazeRun("focus workspace next")
-;F14:: GlazeRun("focus workspace prev")
-; F15:: GlazeRun("cycle-move-to-workspace next")
-; F16:: GlazeRun("cycle-move-to-workspace previous")
-;F17:: GlazeRun("toggle maximized")
-; F18:: GlazeRun("toggle-pause")
-; F19:: GlazeRun("cycle-stack next")
-; F20:: GlazeRun("cycle-stack previous")
+F24 & h::Numpad4 ; focus left
+F24 & j::Numpad2 ; focus down
+F24 & k::Numpad8 ; focus up
+F24 & l::Numpad6 ; focus right
+
+F24 & 1::F13 ; focus workspace 0
+F24 & 2::F14 ; focus workspace 1
+F24 & 3::F15 ; focus workspace 2
+F24 & 4::F16 ; focus workspace 3
+F24 & 5::F17 ; focus workspace 3

@@ -18,6 +18,7 @@ global ReleaseDuration := 200
 
 #Include de-elevated-run.lib.ahk
 
+SetNumLockState("AlwaysOn")
 SetCapsLockState("AlwaysOff")
 CapsLock::Ctrl
 
