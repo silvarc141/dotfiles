@@ -16,18 +16,25 @@ global AppsDir := HomeDir "\scoop\apps"
 global ShimsDir := HomeDir "\scoop\shims"
 global ReleaseDuration := 200
 
-
+; LWin rebound to F12 through registry to avoid glazewm + start menu issues
 SetNumLockState("AlwaysOn")
 SetCapsLockState("AlwaysOff")
 CapsLock::Ctrl
 
 ; launch apps
+
 #Include de-elevated-run.lib.ahk
 
 Activate(criteria)
 {
-    WinWait criteria
-    WinActivate criteria
+    ;WinWait criteria ; less reliable with glazewm
+
+	while (WinExist(criteria) == false)
+	{
+		Sleep 200
+	}
+
+	WinActivate criteria
 }
 
 F12 & c::
