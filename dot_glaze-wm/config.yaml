@@ -305,7 +305,7 @@ keybindings:
   - command: "toggle maximized"
     binding: "F24"
   - command: "focus mode toggle"
-    binding: "NumPad0"
+    binding: "NumLock"
   - command: "exit wm"
     binding: "Subtract"
   - command: "reload config"

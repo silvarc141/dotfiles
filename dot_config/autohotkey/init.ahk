@@ -19,6 +19,7 @@ global ReleaseDuration := 200
 ; LWin rebound to F12 through registry to avoid glazewm + start menu issues
 SetNumLockState("AlwaysOn")
 SetCapsLockState("AlwaysOff")
+SetScrollLockState("AlwaysOff")
 CapsLock::Ctrl
 
 ; launch apps
@@ -68,24 +69,16 @@ F12 & b::
     Activate "ahk_exe firefox.exe"
 }
 
-F12 & z::
-{
-    ; lock workstation?
-}
-
 F12 & \::
 {
     RunDeelevatedDefault '"C:\Program Files\1Password\app\8\1Password.exe" --quick-access'
 }
 
-F12 & Space::
-{
-    ; launcher
-}
+F12 & Space::Numpad0
 
 ; glazewm
 
-F12 & a::Numpad0 ; focus mode toggle
+F12 & a::NumLock ; focus mode toggle
 F12 & s::NumpadMult ; binding mode send
 F12 & d::Numpad5 ; close
 F12 & f::F24 ; toggle maximized
