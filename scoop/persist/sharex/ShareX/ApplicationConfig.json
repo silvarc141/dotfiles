@@ -778,84 +778,84 @@
   "HistoryCheckURL": false,
   "RecentTasks": [
     {
-      "FilePath": "C:\\Users\\Marta\\Pictures\\Screenshots\\2024-01\\Rtr0eTCNpU.png",
+      "FilePath": "C:\\Users\\Marta\\Pictures\\Screenshots\\2023-12\\FJw7Z4S5X7.png",
       "URL": null,
       "ThumbnailURL": null,
       "DeletionURL": null,
       "ShortenedURL": null,
-      "Time": "2024-01-09T01:15:58.6980188Z"
+      "Time": "2023-12-20T12:33:54.2193616Z"
     },
     {
-      "FilePath": "C:\\Users\\Marta\\Pictures\\Screenshots\\2024-01\\B6Dz4gbQhJ.png",
+      "FilePath": "C:\\Users\\Marta\\Pictures\\Screenshots\\2023-12\\2SdpTagclu.png",
       "URL": null,
       "ThumbnailURL": null,
       "DeletionURL": null,
       "ShortenedURL": null,
-      "Time": "2024-01-09T01:20:17.108099Z"
+      "Time": "2023-12-20T12:35:42.6886861Z"
     },
     {
-      "FilePath": "C:\\Users\\Marta\\Pictures\\Screenshots\\2024-01\\xa6f9GYGwt.png",
+      "FilePath": "C:\\Users\\Marta\\Pictures\\Screenshots\\2023-12\\4mBp5Idi4o.png",
       "URL": null,
       "ThumbnailURL": null,
       "DeletionURL": null,
       "ShortenedURL": null,
-      "Time": "2024-01-09T11:22:43.866377Z"
+      "Time": "2023-12-20T12:40:32.0449427Z"
     },
     {
-      "FilePath": "C:\\Users\\Marta\\Pictures\\Screenshots\\2024-01\\mfUP0Gi0qb.png",
+      "FilePath": "C:\\Users\\Marta\\Pictures\\Screenshots\\2023-12\\XNEpBr89gw.png",
       "URL": null,
       "ThumbnailURL": null,
       "DeletionURL": null,
       "ShortenedURL": null,
-      "Time": "2024-01-09T11:25:07.6947115Z"
+      "Time": "2023-12-20T14:08:02.2788684Z"
     },
     {
-      "FilePath": "C:\\Users\\Marta\\Pictures\\Screenshots\\2024-01\\0m6EkXkx97.png",
+      "FilePath": "C:\\Users\\Marta\\Pictures\\Screenshots\\2023-12\\Gu4trpMzxd.png",
       "URL": null,
       "ThumbnailURL": null,
       "DeletionURL": null,
       "ShortenedURL": null,
-      "Time": "2024-01-09T11:36:24.9647495Z"
+      "Time": "2023-12-20T15:51:37.4874105Z"
     },
     {
-      "FilePath": "C:\\Users\\Marta\\Pictures\\Screenshots\\2024-01\\BzdvTEvRDN.png",
+      "FilePath": "C:\\Users\\Marta\\Pictures\\Screenshots\\2023-12\\okPJTVWdft.png",
       "URL": null,
       "ThumbnailURL": null,
       "DeletionURL": null,
       "ShortenedURL": null,
-      "Time": "2024-01-09T16:19:58.1430246Z"
+      "Time": "2023-12-20T16:04:56.715852Z"
     },
     {
-      "FilePath": "C:\\Users\\Marta\\Pictures\\Screenshots\\2024-01\\yLTiMNchIV.png",
+      "FilePath": "C:\\Users\\Marta\\Pictures\\Screenshots\\2023-12\\qnN5uMve4V.png",
       "URL": null,
       "ThumbnailURL": null,
       "DeletionURL": null,
       "ShortenedURL": null,
-      "Time": "2024-01-09T16:37:00.7880365Z"
+      "Time": "2023-12-20T19:47:36.0706854Z"
     },
     {
-      "FilePath": "C:\\Users\\Marta\\Pictures\\Screenshots\\2024-01\\PK4gBjvroY.png",
-      "URL": null,
+      "FilePath": "C:\\Users\\Marta\\Pictures\\Screenshots\\2023-12\\84wQzAE66a.png",
+      "URL": "https://i.vgy.me/UzZ58q.png",
       "ThumbnailURL": null,
-      "DeletionURL": null,
+      "DeletionURL": "https://vgy.me/delete/0745d658-76b8-4b79-be24-774ead4465dc",
       "ShortenedURL": null,
-      "Time": "2024-01-09T16:37:58.2285651Z"
+      "Time": "2023-12-20T20:02:47.9059018Z"
     },
     {
-      "FilePath": "C:\\Users\\Marta\\Pictures\\Screenshots\\2024-01\\8wnTyHintf.png",
+      "FilePath": "C:\\Users\\Marta\\Pictures\\Screenshots\\2023-12\\43hSI9KBAq.png",
       "URL": null,
       "ThumbnailURL": null,
       "DeletionURL": null,
       "ShortenedURL": null,
-      "Time": "2024-01-09T16:38:10.5178077Z"
+      "Time": "2023-12-20T20:31:42.1478667Z"
     },
     {
-      "FilePath": "C:\\Users\\Marta\\Pictures\\Screenshots\\2024-01\\YmS0HMAfgo.png",
-      "URL": null,
-      "ThumbnailURL": null,
-      "DeletionURL": null,
+      "FilePath": "C:\\Users\\Marta\\Pictures\\Screenshots\\2023-12\\DvFmC3ibcL.png",
+      "URL": "https://i.imgur.com/BlQsVTf.png",
+      "ThumbnailURL": "https://i.imgur.com/BlQsVTfm.jpg",
+      "DeletionURL": "https://imgur.com/delete/CDOxRZinV0oe9gC",
       "ShortenedURL": null,
-      "Time": "2024-01-09T16:42:40.509114Z"
+      "Time": "2023-12-20T20:31:48.4223108Z"
     }
   ],
   "RecentTasksSave": true,
@@ -907,7 +907,7 @@
   "AutoCaptureRepeatTime": 60.0,
   "AutoCaptureMinimizeToTray": true,
   "AutoCaptureWaitUpload": true,
-  "ScreenRecordRegion": "0, 15, 1920, 1068",
+  "ScreenRecordRegion": "1294, 251, 400, 314",
   "ActionsToolbarList": [
     "RectangleRegion",
     "PrintScreen",
