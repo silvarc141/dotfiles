@@ -3,7 +3,6 @@ Start-Job { Start-Process -FilePath "$env:PROGRAMFILES\1Password\app\8\1Password
 
 $ScoopAppsPath = "$env:USERPROFILE\scoop\apps"
 Start-Process -FilePath "$ScoopAppsPath\micaforeveryone\current\MicaForEveryone.exe"
-Start-Process -FilePath "$ScoopAppsPath\everything\current\Everything.exe" -ArgumentList "-startup"
 Start-Process -FilePath "$ScoopAppsPath\sharex\current\ShareX.exe" -ArgumentList "-silent"
 Start-Process -FilePath "$ScoopAppsPath\keypirinha\current\keypirinha.exe"
 #Start-Process -FilePath "$ScoopAppsPath\fluent-search\current\FluentSearch.exe"
