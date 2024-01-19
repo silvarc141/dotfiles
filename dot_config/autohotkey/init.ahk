@@ -59,7 +59,8 @@ F12 & x::
 
 F12 & v::
 {
-    RunDeelevatedDefault AppsDir "\everything\current\Everything.exe"
+    ;RunDeelevatedDefault AppsDir "\everything\current\Everything.exe"
+    Run AppsDir "\everything\current\Everything.exe"
     Activate "ahk_exe everything.exe"
 }
 
