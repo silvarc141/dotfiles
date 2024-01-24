@@ -39,7 +39,7 @@ bar:
   border_width: 0
   border_color: "transparent"
 
-  components_center:
+  components_left:
     - type: "workspaces"
       background: "transparent"
       border_width: 0
@@ -65,14 +65,14 @@ bar:
       #  margin: "5 0 5 0"
       # label_expand_text: " "
       #  label_collapse_text: " "
-  components_right:
-    - type: "clock"
-      font_family: "Iosevka Nerd Font"
-      font_size: "15px"
-      font_weight: "800"
-      foreground: *primary_light
-      margin: "0 10 0 0"
-      time_formatting: "ddd dd/MM/yy   HH:mm"
+      #components_right:
+      #- type: "clock"
+      #font_family: "Iosevka Nerd Font"
+      #font_size: "15px"
+      #font_weight: "800"
+      #foreground: *primary_light
+      #margin: "0 10 0 0"
+      #time_formatting: "ddd dd/MM/yy   HH:mm"
   #   - type: "binding mode"
   #     foreground: *background_dark
   #     background: *primary_light
