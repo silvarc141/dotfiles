@@ -10,4 +10,5 @@ Start-Process -FilePath "$ScoopAppsPath\keypirinha\current\keypirinha.exe"
 #Start-Process -FilePath "$ScoopAppsPath\translucenttb\current\TranslucentTB.exe"
 #Start-Process -FilePath "$ScoopAppsPath\eartrumpet\current\EarTrumpet.exe"
 
-. $env:USERPROFILE\.config\scripts-commands\hide-dot-files-in-directory.ps1 $env:USERPROFILE
+. $env:USERPROFILE\.config\scripts-commands\hide-files-matching.ps1 "_*" $env:USERPROFILE
+. $env:USERPROFILE\.config\scripts-commands\hide-files-matching.ps1 ".*" $env:USERPROFILE

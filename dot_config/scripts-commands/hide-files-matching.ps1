@@ -1,5 +1,4 @@
-param([string]$folderPath = ".")
-param([string]$pattern = ".*")
+param([string]$pattern = ".*", [string]$folderPath = ".")
 $dotItems = Get-ChildItem -Path $folderPath -Filter $pattern -Force
 
 foreach ($item in $dotItems) {
