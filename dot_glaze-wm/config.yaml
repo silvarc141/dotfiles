@@ -34,7 +34,7 @@ bar:
   padding: 0
   margin: 0
   offset_x: 0
-  offset_y: -38
+  offset_y: 0
   border_radius: 0
   border_width: 0
   border_color: "transparent"
@@ -65,14 +65,14 @@ bar:
       #  margin: "5 0 5 0"
       # label_expand_text: " "
       #  label_collapse_text: " "
-      #components_right:
-      #- type: "clock"
-      #font_family: "Iosevka Nerd Font"
-      #font_size: "15px"
-      #font_weight: "800"
-      #foreground: *primary_light
-      #margin: "0 10 0 0"
-      #time_formatting: "ddd dd/MM/yy   HH:mm"
+  components_right:
+    - type: "clock"
+      font_family: "Iosevka Nerd Font"
+      font_size: "15px"
+      font_weight: "800"
+      foreground: *primary_light
+      margin: "0 10 0 0"
+      time_formatting: "ddd dd/MM/yy   HH:mm"
   #   - type: "binding mode"
   #     foreground: *background_dark
   #     background: *primary_light
@@ -87,9 +87,6 @@ bar:
   #     margin: "0 0px"
   #     padding: "0 8px"
   # components_right:
-  #   - type: "image"
-  #     source: "C:\\Folder\\AnotherFolder\\image.png"
-  # components_left:
   #   - type: "image"
   #     source: "C:\\Folder\\AnotherFolder\\image.png"
 
