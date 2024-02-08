@@ -14,6 +14,7 @@ A_MenuMaskKey := "vkFF"
 global HomeDir := EnvGet("HomeDrive") EnvGet("HomePath")
 global AppsDir := HomeDir "\scoop\apps"
 global ShimsDir := HomeDir "\scoop\shims"
+global PersistDir := HomeDir "\scoop\persist"
 global ReleaseDuration := 200
 
 ; LWin rebound to F12 through registry to avoid glazewm + start menu issues
@@ -38,16 +39,18 @@ Activate(criteria)
 	WinActivate criteria
 }
 
+AlacrittyRunString := ShimsDir '\alacritty.exe --working-directory ' HomeDir ' --config-file ' PersistDir '\alacritty\alacritty.toml'
+
 F12 & c::
 {
-    RunDeelevatedDefault ShimsDir '\alacritty-config.exe --working-directory ' HomeDir
+    RunDeelevatedDefault AlacrittyRunString
     Activate "Alacritty"
 }
 
 #HotIf GetKeyState("Shift", "P")
 F12 & c::
 {
-    Run ShimsDir '\alacritty-config.exe --working-directory ' HomeDir, '', 'Hide'
+    Run AlacrittyRunString, '', 'Hide'
     Activate "Alacritty"
 }
 #HotIf
