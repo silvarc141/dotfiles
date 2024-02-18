@@ -138,6 +138,8 @@ window_rules:
     match_process_name: "bg3_dx11"
   - command: "ignore"
     match_process_name: "RotMG Exalt"
+  - command: "ignore"
+    match_process_name: "Discovery"
 
   - command: "set floating"
     match_class_name: "#32770" # system dialogs as floating
