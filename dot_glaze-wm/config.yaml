@@ -144,7 +144,7 @@ window_rules:
     match_process_name: "VSCodium"
     match_class_name: "Chrome_WidgetWin_1"
 
-  - commands: ["resize borders 0", "move to workspace m1w0"]
+  - commands: ["resize borders 0px -7px -7px -7px", "move to workspace m1w0"]
     match_process_name: "Obsidian"
 
   - commands: ["move to workspace m1w2"]
