@@ -1,7 +1,6 @@
-primary_light: &primary_light "#FFFFFFFF"
-background_light: &background_light "#FFFFFF55"
-background_dark: &background_dark "transparent"
-workspace_symbol: &workspace_symbol " "
+highlight: &highlight "#FFFFFFFF"
+base: &base "#FFFFFF55"
+background: &background "#00000001" # not completely transparent because it makes areas not clickable
 
 gaps:
   inner_gap: 3
@@ -26,7 +25,7 @@ bar:
   height: "30"
   position: "top"
   background: "transparent"
-  foreground: *primary_light
+  foreground: *highlight
   #font_family: "Segoe UI"
   font_family: "CaskaydiaCove Nerd Font"
   #font_family: "CodeNewRoman Nerd Font"
@@ -47,48 +46,24 @@ bar:
       margin: 0
       offset_x: 0
       offset_y: 0
+      focused_workspace_foreground: *highlight
+      focused_workspace_background: *background
+      focused_workspace_border_color: *background
+      default_workspace_foreground: *base
+      default_workspace_background: *background
+      default_workspace_border_color: *background
+      displayed_workspace_foreground: *base
+      displayed_workspace_background: *background
+      displayed_workspace_border_color: *background
 
-      focused_workspace_foreground: *primary_light
-      focused_workspace_background: *background_dark
-      focused_workspace_border_color: *background_dark
-
-      default_workspace_foreground: *background_light
-      default_workspace_background: *background_dark
-      default_workspace_border_color: *background_dark
-
-      displayed_workspace_foreground: *background_light
-      displayed_workspace_background: *background_dark
-      displayed_workspace_border_color: *background_dark
-
-      # components_left:
-      #- type: "system tray"
-      #  margin: "5 0 5 0"
-      # label_expand_text: " "
-      #  label_collapse_text: " "
   components_right:
     - type: "clock"
       font_family: "Iosevka Nerd Font"
       font_size: "15px"
       font_weight: "800"
-      foreground: *primary_light
+      foreground: *highlight
       margin: "0 10 0 0"
       time_formatting: "ddd dd/MM/yy   HH:mm"
-  #   - type: "binding mode"
-  #     foreground: *background_dark
-  #     background: *primary_light
-  #     margin: "0 4px 0 0"
-  #     padding: "0 8px"
-  #   - type: "tiling direction"
-  #     # label_horizontal: "  "
-  #     # label_vertical: " "
-  #     label_horizontal: "<attr fg='#f068f2'>  </attr>"
-  #     label_vertical: "<attr fg='#67f0e2'>  </attr>"
-  #     background: *background_dark
-  #     margin: "0 0px"
-  #     padding: "0 8px"
-  # components_right:
-  #   - type: "image"
-  #     source: "C:\\Folder\\AnotherFolder\\image.png"
 
 workspaces:
   - name: "m0w0"
@@ -127,125 +102,76 @@ window_rules:
   - command: "ignore"
     match_process_name: "RoundedTB"
   - command: "ignore"
-    match_process_name: "LeagueOfLegends"
-  - command: "ignore"
-    match_process_name: "League Of Legends"
+    match_process_name: "/LeagueOfLegends|League Of Legends|LeagueClient/"
   - command: "ignore"
     match_class_name: "RiotWindowClass"
-  - command: "ignore"
-    match_process_name: "LeagueClient"
   - command: "ignore"
     match_process_name: "bg3_dx11"
   - command: "ignore"
     match_process_name: "RotMG Exalt"
   - command: "ignore"
+    match_process_name: "Glorious Companions"
+  - command: "ignore"
     match_process_name: "Discovery"
 
   - command: "set floating"
     match_class_name: "#32770" # system dialogs as floating
-
   - command: "set floating"
     match_process_name: "1Password"
-
   - command: "set floating"
     match_process_name: "FluentSearch"
-    # match_title: "Fluent Search - Settings"
-
   - command: "set floating"
     match_process_name: "KeyboardSplitter"
-
   - command: "set floating"
     match_process_name: "LariLauncher"
-
   - command: "set floating"
     match_process_name: "copyq"
 
-  - command: "set floating"
+  - command: "move to workspace m0w0"
+    match_process_name: "Unity"
+  - commands: ["move to workspace m0w0", "set floating"]
     match_process_name: "Unity Hub"
-
-  - command: "resize borders 0px -7px -7px -7px"
-    match_process_name: "steamwebhelper"
-
-  - command: "resize borders 0px -7px -7px -7px"
-    match_process_name: "steam"
-
-  - command: "resize borders 0 -2px 0px -2px"
-    match_process_name: "firefox"
-
-  - command: "resize borders 0 -2px 0px -2px"
-    match_process_name: "librewolf"
 
   - command: "move to workspace m0w1"
     match_process_name: "rider64"
   - command: "set floating"
     match_class_name: "SunAwtDialog"
 
-  - command: "move to workspace m0w0"
-    match_process_name: "Unity"
-
   - command: "move to workspace m0w2"
+    match_process_name: "plastic"
+
+  - command: "move to workspace m0w3"
     match_process_name: "VSCodium"
     match_class_name: "Chrome_WidgetWin_1"
-
-  - commands: ["move to workspace m1w0", "move left"]
-    match_process_name: "Discord"
-  - commands:
-      [
-        "move to workspace m1w0",
-        "resize borders 0px 1px 1px 1px",
-        "move left",
-        "set width 66%",
-      ]
-    match_process_name: "Vesktop"
-  - commands:
-      [
-        "move to workspace m1w0",
-        "resize borders 0px 1px 1px 1px",
-        "move left",
-        "set width 66%",
-      ]
-    match_process_name: "ArmCord"
 
   - commands: ["resize borders 0", "move to workspace m1w0"]
     match_process_name: "Obsidian"
 
-  - command: "move to workspace m1w1"
-    match_process_name: "plastic"
-  - command: "move to workspace m0w4"
-    match_process_name: "plastic"
-    match_title: "/(?!^Workspace.*)(^.*$)/"
+  - commands: ["move to workspace m1w2"]
+    match_process_name: "/Discord|Vesktop|ArmCord/"
+  - command: "resize borders 0px 1px 1px 1px"
+    match_process_name: "/Vesktop|ArmCord/"
 
-  - commands: ["move to workspace m1w2", "tiling direction vertical", "move up"]
+  - commands: ["move to workspace m1w3", "move up"]
     match_process_name: "Spark Desktop"
     match_class_name: "Chrome_WidgetWin_1"
 
-  - commands:
-      ["move to workspace m1w2", "tiling direction vertical", "move down"]
+  - commands: ["move to workspace m1w3"]
     match_process_name: "Beeper"
 
-  - command: "move to workspace m1w3"
+  - commands: ["move to workspace m1w1", "resize borders 0 -2px 0px -2px"]
     match_process_name: "firefox"
+  - command: "move to workspace m1w1"
+    match_process_name: "vivaldi"
 
-  - command: "move to workspace m1w3"
-    match_process_name: "vivaldi"
-    match_title: ".* - Vivaldi"
-  - command: "resize borders 0px -6px -6px -6px"
-    match_process_name: "vivaldi"
-    match_title: ".* - Vivaldi"
-  - command: "move to workspace m1w0"
-    match_process_name: "vivaldi"
-    match_title: "ClickUp.*"
-  - command: "move to workspace m1w4"
-    match_process_name: "vivaldi"
-    match_title: "YouTube Music.*"
-  - command: "move to workspace m1w4"
-    match_process_name: "vivaldi"
-    match_title: "Twilight Wars.*"
-
-  - command: "ignore"
-    match_process_name: "Glorious Companions"
-#  - command: "ignore"
-#    match_process_name: "Vintagestory"
+  - commands: ["move to workspace m0w4", "resize borders 0px -7px -7px -7px"]
+    match_process_name: "/steamwebhelper|steam/"
+  - commands: ["move to workspace m0w4"]
+    match_process_name: "Battle.net"
+  - commands: ["move to workspace m0w4"]
+    match_process_name: "Heroic"
+  - commands: ["move to workspace m0w4"]
+    match_process_name: "EpicGamesLauncher"
 
 binding_modes:
   - name: "send"

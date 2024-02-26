@@ -1878,7 +1878,7 @@
               "CutOutEffectSize": 10
             },
             "LastRegionTool": "RegionRectangle",
-            "LastAnnotationTool": "DrawingFreehand",
+            "LastAnnotationTool": "DrawingTextOutline",
             "LastEditorTool": "DrawingRectangle",
             "ImageEditorStartMode": "AutoSize",
             "ImageEditorWindowState": {
