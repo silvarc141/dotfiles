@@ -69,8 +69,8 @@ F12 & v::
 
 F12 & b::
 {
-    RunDeelevatedDefault AppsDir '\firefox\current\firefox.exe'
-    Activate "ahk_exe firefox.exe"
+    RunDeelevatedDefault AppsDir '\vivaldi\current\Application\vivaldi.exe'
+    Activate "ahk_exe vivaldi.exe"
 }
 
 F12 & \::

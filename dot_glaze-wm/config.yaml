@@ -161,7 +161,7 @@ window_rules:
 
   - commands: ["move to workspace m1w1", "resize borders 0 -2px 0px -2px"]
     match_process_name: "firefox"
-  - command: "move to workspace m1w1"
+  - commands: ["move to workspace m1w1", "resize borders 0 -7px -7px -7px"]
     match_process_name: "vivaldi"
 
   - commands: ["move to workspace m0w4", "resize borders 0px -7px -7px -7px"]
