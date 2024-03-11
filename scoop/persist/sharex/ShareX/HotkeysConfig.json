@@ -1819,7 +1819,7 @@
               ],
               "SelectedStickerPack": 0,
               "RegionCornerRadius": 0,
-              "BorderColor": "242, 60, 60",
+              "BorderColor": "Red",
               "BorderSize": 4,
               "BorderStyle": "Solid",
               "FillColor": "0, 0, 0, 0",
@@ -1878,7 +1878,7 @@
               "CutOutEffectSize": 10
             },
             "LastRegionTool": "RegionRectangle",
-            "LastAnnotationTool": "DrawingTextOutline",
+            "LastAnnotationTool": "DrawingFreehand",
             "LastEditorTool": "DrawingRectangle",
             "ImageEditorStartMode": "AutoSize",
             "ImageEditorWindowState": {

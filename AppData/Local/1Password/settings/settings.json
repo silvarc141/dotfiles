@@ -1,13 +1,13 @@
 {
   "version": 1,
   "sshAgent.sshAuthorizatonModel": "application-and-terminal-session",
-  "ui.routes.lastUsedRoute": "{\"type\":\"ItemDetail\",\"content\":{\"itemListRoute\":{\"unlockedRoute\":{\"collectionUuid\":\"everything\"},\"itemListType\":{\"type\":\"AllItems\"},\"category\":null,\"sortBehavior\":null},\"itemId\":\"5F\"}}",
+  "ui.routes.lastUsedRoute": "{\"type\":\"ItemDetail\",\"content\":{\"itemListRoute\":{\"unlockedRoute\":{\"collectionUuid\":\"everything\"},\"itemListType\":{\"type\":\"AllItems\"},\"category\":null,\"sortBehavior\":null},\"itemId\":\"9C\"}}",
   "ui.itemList.sortBehavior": "{\"default\":{\"sortKey\":\"title\",\"sortOrder\":\"ascending\"},\"password_strength\":{\"sortKey\":\"dateModified\",\"sortOrder\":\"descending\"},\"search\":{\"sortKey\":\"dateModified\",\"sortOrder\":\"descending\"}}",
   "passwordGenerator.type": "password-generator-menu-entry-type-memorable-password",
-  "passwordGenerator.size.words": 3,
+  "passwordGenerator.size.words": 5,
   "passwordGenerator.fullWords": true,
   "passwordGenerator.capitalize": true,
-  "passwordGenerator.separatorType": "password-generator-menu-entry-separator-hyphens",
+  "passwordGenerator.separatorType": "password-generator-menu-entry-separator-numbers-and-symbols",
   "sshAgent.storeKeyTitles": true,
   "sshAgent.storeSshKeyTitlesResponseGiven": true,
   "sshAgent.enabled": true,
@@ -43,10 +43,10 @@
     "passwordGenerator.capitalize": "OFdvhEZDlufuye2EjZtNnZDDMU3Ii0SqcE8WVusB8FY",
     "passwordGenerator.fullWords": "V1xsUTUg5+tixZdffnCh4er7E5f55DvYtJBANxh++lA",
     "passwordGenerator.includeSymbols": "5hK9Zt9mDyT16nnBEVAYmAXyDSxgyboM4nbbIdiQo2g",
-    "passwordGenerator.separatorType": "IMMpP9qfEciMWfNDVsyLqGBT5PiYia8qRYlwrcnuku4",
+    "passwordGenerator.separatorType": "0vr1KwX2+3bI8buv7oMkv4oGge1NjseFYEC8cDhviT8",
     "passwordGenerator.size.answer": "iEfNZNc4xG9yVlpg+bb3kuI5A0c9gXPXvDYnyxhYdqQ",
     "passwordGenerator.size.characters": "8XQq3jb8BVXjjadprFw71HQoYsg9UEo7Hkd45uKVz3U",
-    "passwordGenerator.size.words": "0SP1946hv6BmmLlpHjpql3sXTqR0K7zr/amGKACOw48",
+    "passwordGenerator.size.words": "A+JzauOBJILxBsJVf1iE/cB775QZIPs8DTiRSXyYZlc",
     "passwordGenerator.type": "fLjS1bg1gRTJ35hC5IjbTC9j+7sMYSdxG3xN/mvmro0",
     "security.authenticatedUnlock.enabled": "3CrPI8nBRE7G33sP9cH5Ukksdg343b83h0FUwjYTBdU",
     "sidebar.showCategories": "cAYDpRYaVVqxzQ7LBRWOe7HpXJwLJeCySyOFWaHiH98",
@@ -60,6 +60,6 @@
     "sshAgent.storeKeyTitles": "1F7CfqBU0A7i7q1x0aszqzGigLPE0TrD+SKNDUmbL5I",
     "sshAgent.storeSshKeyTitlesResponseGiven": "ZsBh4Z+BQ54FfGo5eF9d/VQt0+7GgoCuYXWdz78W1UI",
     "ui.itemList.sortBehavior": "cvJ0BA86n7CcJDCUJ4XRCO6uCsKr4Si9jvws+kMvD2o",
-    "ui.routes.lastUsedRoute": "pWMLeO9veCu5N4LkuuNHzACWr4WBLJTZoF/PjXUgI5U"
+    "ui.routes.lastUsedRoute": "eWnQZMrModaN/K1ouXQpWsMQVu6GdoKEF87ZI4ntY7s"
   }
 }

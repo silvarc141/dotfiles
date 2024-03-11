@@ -778,84 +778,84 @@
   "HistoryCheckURL": false,
   "RecentTasks": [
     {
-      "FilePath": "C:\\Users\\silvarc\\Pictures\\Screenshots\\2024-02\\IqUtRJpIus.png",
+      "FilePath": "C:\\Users\\silvarc\\Pictures\\Screenshots\\2024-03\\6hx5jQNWne.png",
       "URL": null,
       "ThumbnailURL": null,
       "DeletionURL": null,
       "ShortenedURL": null,
-      "Time": "2024-02-25T23:01:42.4187366Z"
+      "Time": "2024-03-08T14:45:47.9038945Z"
     },
     {
-      "FilePath": "C:\\Users\\silvarc\\Pictures\\Screenshots\\2024-02\\gfCvtT3q1e.png",
+      "FilePath": "C:\\Users\\silvarc\\Pictures\\Screenshots\\2024-03\\ENNmsPFgJz.png",
       "URL": null,
       "ThumbnailURL": null,
       "DeletionURL": null,
       "ShortenedURL": null,
-      "Time": "2024-02-26T08:48:41.0507007Z"
+      "Time": "2024-03-08T19:11:03.7124024Z"
     },
     {
-      "FilePath": "C:\\Users\\silvarc\\Pictures\\Screenshots\\2024-02\\RRUve5qTsE.png",
-      "URL": null,
-      "ThumbnailURL": null,
-      "DeletionURL": null,
+      "FilePath": "C:\\Users\\silvarc\\Pictures\\Screenshots\\2024-03\\p8Ta8uFWB3.png",
+      "URL": "https://i.imgur.com/vKE8W6D.png",
+      "ThumbnailURL": "https://i.imgur.com/vKE8W6Dm.jpg",
+      "DeletionURL": "https://imgur.com/delete/MIEngA08loDB3UA",
       "ShortenedURL": null,
-      "Time": "2024-02-26T08:50:04.5572235Z"
+      "Time": "2024-03-08T19:11:26.2255852Z"
     },
     {
-      "FilePath": "C:\\Users\\silvarc\\Pictures\\Screenshots\\2024-02\\xeToAChFog.png",
+      "FilePath": "C:\\Users\\silvarc\\Pictures\\Screenshots\\2024-03\\fXvwDD0teo.png",
       "URL": null,
       "ThumbnailURL": null,
       "DeletionURL": null,
       "ShortenedURL": null,
-      "Time": "2024-02-26T08:58:26.637028Z"
+      "Time": "2024-03-08T22:38:21.0714401Z"
     },
     {
-      "FilePath": "C:\\Users\\silvarc\\Pictures\\Screenshots\\2024-02\\DECj9eGgqw.png",
+      "FilePath": "C:\\Users\\silvarc\\Pictures\\Screenshots\\2024-03\\dHaPbOsbja.png",
       "URL": null,
       "ThumbnailURL": null,
       "DeletionURL": null,
       "ShortenedURL": null,
-      "Time": "2024-02-26T08:58:31.2097799Z"
+      "Time": "2024-03-08T22:56:59.4457602Z"
     },
     {
-      "FilePath": "C:\\Users\\silvarc\\Pictures\\Screenshots\\2024-02\\955vVS4Ofa.png",
+      "FilePath": "C:\\Users\\silvarc\\Pictures\\Screenshots\\2024-03\\j9vaOmVgCH.png",
       "URL": null,
       "ThumbnailURL": null,
       "DeletionURL": null,
       "ShortenedURL": null,
-      "Time": "2024-02-26T09:53:56.8624517Z"
+      "Time": "2024-03-09T17:13:40.5266935Z"
     },
     {
-      "FilePath": "C:\\Users\\silvarc\\Pictures\\Screenshots\\2024-02\\PPCtCm4NFp.png",
+      "FilePath": "C:\\Users\\silvarc\\Pictures\\Screenshots\\2024-03\\jJKUyihWHm.png",
       "URL": null,
       "ThumbnailURL": null,
       "DeletionURL": null,
       "ShortenedURL": null,
-      "Time": "2024-02-26T12:06:39.3095548Z"
+      "Time": "2024-03-09T23:15:38.0497816Z"
     },
     {
-      "FilePath": "C:\\Users\\silvarc\\Pictures\\Screenshots\\2024-02\\JM7NLy2lHZ.png",
+      "FilePath": "C:\\Users\\silvarc\\Pictures\\Screenshots\\2024-03\\emClPmef7Y.png",
       "URL": null,
       "ThumbnailURL": null,
       "DeletionURL": null,
       "ShortenedURL": null,
-      "Time": "2024-02-26T17:42:33.4911064Z"
+      "Time": "2024-03-10T22:14:10.6176336Z"
     },
     {
-      "FilePath": "C:\\Users\\silvarc\\Pictures\\Screenshots\\2024-02\\se8LfBpWUp.png",
+      "FilePath": "C:\\Users\\silvarc\\Pictures\\Screenshots\\2024-03\\A2qK0XHA4D.png",
       "URL": null,
       "ThumbnailURL": null,
       "DeletionURL": null,
       "ShortenedURL": null,
-      "Time": "2024-02-26T17:44:35.5556378Z"
+      "Time": "2024-03-10T23:19:39.5524155Z"
     },
     {
-      "FilePath": "C:\\Users\\silvarc\\Pictures\\Screenshots\\2024-02\\C0NpBUqHOL.png",
+      "FilePath": "C:\\Users\\silvarc\\Pictures\\Screenshots\\2024-03\\ln3ZM8hxtJ.mp4",
       "URL": null,
       "ThumbnailURL": null,
       "DeletionURL": null,
       "ShortenedURL": null,
-      "Time": "2024-02-26T20:20:00.6818449Z"
+      "Time": "2024-03-10T23:45:58.1070199Z"
     }
   ],
   "RecentTasksSave": true,
@@ -907,7 +907,7 @@
   "AutoCaptureRepeatTime": 60.0,
   "AutoCaptureMinimizeToTray": true,
   "AutoCaptureWaitUpload": true,
-  "ScreenRecordRegion": "17, 484, 352, 517",
+  "ScreenRecordRegion": "0, 30, 1920, 1050",
   "ActionsToolbarList": [
     "RectangleRegion",
     "PrintScreen",
@@ -921,6 +921,10 @@
   "ActionsToolbarLockPosition": false,
   "ActionsToolbarStayTopMost": true,
   "RecentColors": [
+    "Red",
+    "Black",
+    "Red",
+    "White",
     "205, 62, 62",
     "0, 0, 0, 0",
     "White",
