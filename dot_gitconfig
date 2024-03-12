@@ -1,0 +1,7 @@
+[user]
+	name = silvarc141
+    email = silvarc141@users.noreply.github.com
+[core]
+    sshCommand = C:/Windows/System32/OpenSSH/ssh.exe
+[credential "https://git.jetbrains.space"]
+    provider = generic
